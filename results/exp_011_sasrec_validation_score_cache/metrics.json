@@ -1,0 +1,68 @@
+{
+  "experiment_id": "exp_011_sasrec_validation_score_cache",
+  "status": "completed",
+  "phase": "hybrid_input_cache",
+  "code_commit": "911859c20e04d896f2214d11c08b5807a659f73a",
+  "seed": 42,
+  "device": "cpu",
+  "torch_version": "2.14.1+cpu",
+  "data_hashes": {
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_vocab_sha256": "6cbe2f9d7cfe8759d3b5430080677349891f72303755498765579eabf3b72ee7"
+  },
+  "topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+  "score_cache": {
+    "path": "results\\exp_011_sasrec_validation_score_cache\\validation_sasrec_scores.npz",
+    "sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+    "bytes": 12167041
+  },
+  "training": {
+    "best_epoch": 20,
+    "epochs_ran": 25,
+    "best_validation_metric": 0.4117431226649005,
+    "truncated_train_sequences": 21
+  },
+  "score_matrix": {
+    "users": 28589,
+    "courses": 117,
+    "dtype": "float32",
+    "score_min": -9.030963897705078,
+    "score_max": 8.439983367919922,
+    "seen_entries": 146061,
+    "candidate_entries": 3198852,
+    "truncated_histories": 21
+  },
+  "validation": {
+    "users": 28589,
+    "missing_targets": 0,
+    "truncated_histories": 21,
+    "mrr": 0.34288276566096015,
+    "recall@5": 0.5082724124663333,
+    "ndcg@5": 0.35279091781245636,
+    "recall@10": 0.6912099059078667,
+    "ndcg@10": 0.4117431226649005,
+    "recall@20": 0.8682010563503445,
+    "ndcg@20": 0.4567581396383912
+  },
+  "cached_validation": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.34288276566096015,
+    "recall@5": 0.5082724124663333,
+    "ndcg@5": 0.35279091781245636,
+    "recall@10": 0.6912099059078667,
+    "ndcg@10": 0.41174312266490054,
+    "recall@20": 0.8682010563503445,
+    "ndcg@20": 0.4567581396383913
+  },
+  "checks": {
+    "topology_cache_hash": true,
+    "topology_alignment": true,
+    "exp006_metric_reproduction": true,
+    "expected_best_epoch": true,
+    "direct_vs_cache_metrics": true,
+    "reload_validation": true
+  },
+  "development_test_evaluated": false,
+  "alpha_tuned": false
+}

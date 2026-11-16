@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Third party data and processed files
+data/*
+!data/README.md
+
+# Large binary artifacts (score caches and model weights)
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Generated figures and tables
+outputs/

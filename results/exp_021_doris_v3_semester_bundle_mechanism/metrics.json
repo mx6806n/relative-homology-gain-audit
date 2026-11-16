@@ -1,0 +1,103 @@
+{
+  "experiment_id": "exp_021_doris_v3_semester_bundle_mechanism",
+  "status": "completed",
+  "phase": "external_mechanism_replication",
+  "evidence_scope": "target_independent_external",
+  "dataset": "DORIS",
+  "state_definition": "prior graph-mapped semesters S; current-semester previously unseen graph-mapped course bundle C",
+  "inputs": {
+    "s2_zip": "S2.zip",
+    "s2_sha256": "8fd24c05878cc184921f8749948c088df1d71f70f3518612ba5710e8489f3360",
+    "edges": "results\\doris_candidate_prerequisite_edges_v3.csv",
+    "edges_sha256": "01d2db584e3ac62e9a2f416e08e7750a010e513acfe1f2e5bb0878ccf30b5eaa",
+    "feasibility": "results\\doris_feasibility_final_v3.json",
+    "feasibility_sha256": "0f489dfd187a1776df42b5748c081e49d85c0665081ae839b72e97b7489b9ab1",
+    "manual_precision": 0.94
+  },
+  "graph": {
+    "nodes": 927,
+    "edges": 1088,
+    "directed_triangles": 103,
+    "is_dag": true
+  },
+  "session_metadata": {
+    "student_column": "StudedntId",
+    "academic_year_column": "AcademicYear",
+    "semester_column": "Semester",
+    "course_column": "CourseId",
+    "raw_semester_values": [
+      "1.0",
+      "2.0",
+      "3.0"
+    ],
+    "raw_academic_year_values": [
+      "13-14",
+      "14-15",
+      "15-16",
+      "16-17",
+      "17-18",
+      "18-19",
+      "19-20",
+      "20-21"
+    ],
+    "graph_mapped_rows": 33969
+  },
+  "eligible_students": 3919,
+  "eligible_states": 12327,
+  "repeated_graph_courses_removed_from_candidate_bundles": 968,
+  "bundle_size": {
+    "count": 12327,
+    "min": 1,
+    "max": 9,
+    "mean": 2.1730348016549037,
+    "median": 2.0,
+    "p25": 1.0,
+    "p75": 3.0,
+    "distinct_sizes": 9,
+    "fraction_ge2": 0.6173440415348422
+  },
+  "gain_sign": {
+    "positive": 225,
+    "zero": 5272,
+    "negative": 6830,
+    "positive_fraction": 0.01825261620832319,
+    "zero_fraction": 0.4276790784456883,
+    "negative_fraction": 0.5540683053459885
+  },
+  "correlations": {
+    "abs_gain_vs_bundle_size": 0.5356934415704231,
+    "gain_vs_bundle_size": -0.49903655553136056,
+    "absorbed_edges_vs_bundle_size": 0.42372674864085486,
+    "d2_rank_drop_vs_bundle_size": 0.19299154526867254,
+    "delta_beta0_vs_bundle_size": 0.10994344956625426,
+    "abs_gain_vs_absorbed_edges": -0.11802943436373595
+  },
+  "cluster_bootstrap": {
+    "abs_gain_vs_bundle_size": {
+      "replicates_requested": 1000,
+      "replicates_defined": 1000,
+      "seed": 20261009,
+      "ci95_percentile": [
+        0.521087594947464,
+        0.5502618514359499
+      ]
+    },
+    "absorbed_edges_vs_bundle_size": {
+      "replicates_requested": 1000,
+      "replicates_defined": 1000,
+      "seed": 20261010,
+      "ci95_percentile": [
+        0.406631329013823,
+        0.4418997066620509
+      ]
+    }
+  },
+  "exact_checks": {
+    "decomposition_identity_mismatches": 0,
+    "delta_rank_d1_equals_m_minus_h_mismatches": 0
+  },
+  "selection_performed": false,
+  "recommendation_metrics_evaluated": false,
+  "target_performance_evaluated": false,
+  "corrected_score_evaluated": false
+}

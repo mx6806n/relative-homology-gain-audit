@@ -1,0 +1,14 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "topology_cache_path": "results/exp_010_validation_topology_cache/validation_topology_cache.npz",
+  "sasrec_cache_path": "results/exp_011_sasrec_validation_score_cache/validation_sasrec_scores.npz",
+  "expected_topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+  "expected_sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+  "output_dir": "results/exp_022_size_stratified_diagnostic",
+  "min_sequence_length": 5,
+  "m_bin_lower_edges": [0, 1, 3, 6, 11, 21],
+  "min_meaningful_auc": 0.55,
+  "top_k": 10,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20261011
+}

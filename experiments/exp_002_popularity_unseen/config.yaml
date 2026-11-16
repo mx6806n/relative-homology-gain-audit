@@ -1,0 +1,8 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_002_popularity_unseen",
+  "min_sequence_length": 5,
+  "cutoffs": [5, 10, 20],
+  "seed": 42,
+  "ranking_policy": "full_catalog_exclude_history"
+}

@@ -1,0 +1,9 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_008_topology_signal_profile",
+  "min_sequence_length": 5,
+  "sample_users": 250,
+  "sample_seed": 1701,
+  "reference_checks": 25,
+  "cache_size": 131072
+}

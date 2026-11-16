@@ -1,0 +1,72 @@
+{
+  "experiment_id": "exp_010_validation_topology_cache",
+  "cache_file": "validation_topology_cache.npz",
+  "cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+  "data_hashes": {
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_vocab_sha256": "6cbe2f9d7cfe8759d3b5430080677349891f72303755498765579eabf3b72ee7",
+    "concept_vocab_sha256": "dffad029cfcf1e21ad8790dcce89837c549b40596cad7df767be6d9b72bbc85b",
+    "course_to_concepts_sha256": "42e6429b1a93147154c6d0a46d24e5affa0266df31fb7f39145a2a5ae6ab3f67",
+    "prerequisite_edges_sha256": "e8267fc646a5bea5df681afc16ee63a115709771ed3114e2c2832d111091d0f6"
+  },
+  "topology": {
+    "graph_variant": "native_raw_prerequisite_dag",
+    "coeff": 2,
+    "nodes": 287,
+    "edges": 725,
+    "evaluator": "GF2RelativeHomologyEvaluator",
+    "evaluator_cache_size": 524288
+  },
+  "split": {
+    "protocol": "temporal_leave_two_out",
+    "scope": "validation_histories_only",
+    "min_sequence_length": 5,
+    "users": 28589,
+    "courses": 117
+  },
+  "arrays": {
+    "deltas": {
+      "dtype": "int16",
+      "shape": [
+        28589,
+        117
+      ],
+      "seen_sentinel": -32768
+    },
+    "beta_before": {
+      "dtype": "int16",
+      "shape": [
+        28589
+      ]
+    },
+    "validation_target_indices": {
+      "dtype": "int16",
+      "shape": [
+        28589
+      ]
+    },
+    "history_lengths": {
+      "dtype": "int16",
+      "shape": [
+        28589
+      ]
+    },
+    "user_ids": {
+      "dtype": "<U10",
+      "shape": [
+        28589
+      ]
+    },
+    "course_ids": {
+      "dtype": "<U9",
+      "shape": [
+        117
+      ]
+    }
+  },
+  "validation": {
+    "reloaded_without_pickle": true,
+    "ordering_and_mask_checks_passed": true
+  },
+  "development_test_evaluated": false
+}

@@ -1,0 +1,274 @@
+{
+  "experiment_id": "exp_018_relative_chain_decomposition",
+  "status": "completed",
+  "phase": "mechanism_explanation",
+  "evidence_scope": "target_independent",
+  "identity": "Delta beta1 = Delta dim(C1_rel) - Delta rank(d1) - Delta rank(d2)",
+  "domains": {
+    "cs": {
+      "users": 28589,
+      "courses": 117,
+      "candidate_states": 3198852,
+      "graph_nodes": 287,
+      "graph_edges": 725,
+      "directed_triangles": 135,
+      "identity_mismatches": 0,
+      "elapsed_seconds": 184.47071539999888,
+      "correlations": {
+        "abs_delta_vs_new_concepts": {
+          "global_spearman": 0.8190284183456519,
+          "per_user_mean": 0.8149695341268349,
+          "per_user_median": 0.8194830001972295,
+          "per_user_defined": 28580
+        },
+        "edge_drop_vs_new_concepts": {
+          "global_spearman": 0.8201985968139531,
+          "per_user_mean": 0.8820134571431666,
+          "per_user_median": 0.8846864369650488,
+          "per_user_defined": 28578
+        },
+        "abs_delta_vs_edge_drop": {
+          "global_spearman": 0.6286306276760806,
+          "per_user_mean": 0.6761630296797171,
+          "per_user_median": 0.6598030161417829,
+          "per_user_defined": 28578
+        },
+        "delta_vs_edge_drop": {
+          "global_spearman": 0.14799630206337994,
+          "per_user_mean": 0.16123190449466768,
+          "per_user_median": 0.17210789619400524,
+          "per_user_defined": 28578
+        },
+        "d1_rank_drop_vs_new_concepts": {
+          "global_spearman": 0.9886500715729508,
+          "per_user_mean": 0.9902065213131342,
+          "per_user_median": 0.9979951624855079,
+          "per_user_defined": 28580
+        },
+        "d2_rank_drop_vs_new_concepts": {
+          "global_spearman": 0.46876577866753927,
+          "per_user_mean": 0.5429833198946021,
+          "per_user_median": 0.5365134202952992,
+          "per_user_defined": 28575
+        }
+      },
+      "component_summary": {
+        "mean_abs_delta": 4.525209668968743,
+        "median_abs_delta": 1.0,
+        "mean_edge_drop": 9.22650594650831,
+        "median_edge_drop": 1.0,
+        "mean_abs_d1_rank_drop": 6.7633854270219445,
+        "mean_abs_d2_rank_drop": 1.0415055151035435,
+        "mean_cancellation_fraction": 0.41996397208668773,
+        "median_cancellation_fraction": 0.5,
+        "edge_unique_dominant_fraction": 0.20425358847486536,
+        "d1_unique_dominant_fraction": 0.47065916147417886,
+        "d2_unique_dominant_fraction": 0.0,
+        "dominant_tie_fraction": 0.3250872500509558,
+        "edge_drop_per_new_concept": {
+          "count": 2478792,
+          "mean": 0.8651363805721913,
+          "median": 0.5,
+          "p90": 2.2580645161290325
+        }
+      },
+      "ranges": {
+        "delta": [
+          -24,
+          169
+        ],
+        "edge_drop": [
+          0,
+          318
+        ],
+        "d1_rank_drop": [
+          0,
+          121
+        ],
+        "d2_rank_drop": [
+          0,
+          56
+        ]
+      },
+      "evaluator_component_cache_size": 524288
+    },
+    "math": {
+      "users": 3516,
+      "courses": 26,
+      "candidate_states": 75491,
+      "graph_nodes": 294,
+      "graph_edges": 761,
+      "directed_triangles": 209,
+      "identity_mismatches": 0,
+      "elapsed_seconds": 3.4305370999991283,
+      "correlations": {
+        "abs_delta_vs_new_concepts": {
+          "global_spearman": 0.7058959968481158,
+          "per_user_mean": 0.7116629727377488,
+          "per_user_median": 0.750997364962389,
+          "per_user_defined": 3513
+        },
+        "edge_drop_vs_new_concepts": {
+          "global_spearman": 0.9161328917711683,
+          "per_user_mean": 0.920957021157881,
+          "per_user_median": 0.9317273232005013,
+          "per_user_defined": 3513
+        },
+        "abs_delta_vs_edge_drop": {
+          "global_spearman": 0.7622508615151736,
+          "per_user_mean": 0.7433933232144585,
+          "per_user_median": 0.7791049012140783,
+          "per_user_defined": 3512
+        },
+        "delta_vs_edge_drop": {
+          "global_spearman": 0.6032498768119576,
+          "per_user_mean": 0.6603446793769264,
+          "per_user_median": 0.7337298606876601,
+          "per_user_defined": 3512
+        },
+        "d1_rank_drop_vs_new_concepts": {
+          "global_spearman": 1.0,
+          "per_user_mean": 1.0,
+          "per_user_median": 1.0,
+          "per_user_defined": 3514
+        },
+        "d2_rank_drop_vs_new_concepts": {
+          "global_spearman": 0.712515564969167,
+          "per_user_mean": 0.745000229885621,
+          "per_user_median": 0.7539669197676774,
+          "per_user_defined": 3512
+        }
+      },
+      "component_summary": {
+        "mean_abs_delta": 3.922467578916692,
+        "median_abs_delta": 2.0,
+        "mean_edge_drop": 11.793750248373978,
+        "median_edge_drop": 7.0,
+        "mean_abs_d1_rank_drop": 7.884118636658674,
+        "mean_abs_d2_rank_drop": 1.4749705262879018,
+        "mean_cancellation_fraction": 0.5877787802655907,
+        "median_cancellation_fraction": 0.7272727272727273,
+        "edge_unique_dominant_fraction": 0.4915817779602867,
+        "d1_unique_dominant_fraction": 0.23853174550608683,
+        "d2_unique_dominant_fraction": 0.0,
+        "dominant_tie_fraction": 0.2698864765336265,
+        "edge_drop_per_new_concept": {
+          "count": 61373,
+          "mean": 1.538883802318769,
+          "median": 1.3,
+          "p90": 2.8
+        }
+      },
+      "ranges": {
+        "delta": [
+          -25,
+          41
+        ],
+        "edge_drop": [
+          0,
+          92
+        ],
+        "d1_rank_drop": [
+          0,
+          50
+        ],
+        "d2_rank_drop": [
+          0,
+          28
+        ]
+      },
+      "evaluator_component_cache_size": 8019
+    },
+    "psy": {
+      "users": 1758,
+      "courses": 26,
+      "candidate_states": 38105,
+      "graph_nodes": 377,
+      "graph_edges": 831,
+      "directed_triangles": 260,
+      "identity_mismatches": 0,
+      "elapsed_seconds": 3.081318399999873,
+      "correlations": {
+        "abs_delta_vs_new_concepts": {
+          "global_spearman": 0.6741382201120705,
+          "per_user_mean": 0.7199925981160638,
+          "per_user_median": 0.7360474337780458,
+          "per_user_defined": 1757
+        },
+        "edge_drop_vs_new_concepts": {
+          "global_spearman": 0.8718665662502697,
+          "per_user_mean": 0.9153416404440833,
+          "per_user_median": 0.9154810816869372,
+          "per_user_defined": 1757
+        },
+        "abs_delta_vs_edge_drop": {
+          "global_spearman": 0.8269243717452751,
+          "per_user_mean": 0.8197742279521493,
+          "per_user_median": 0.8784795327645696,
+          "per_user_defined": 1757
+        },
+        "delta_vs_edge_drop": {
+          "global_spearman": 0.7291297489634913,
+          "per_user_mean": 0.7644272627534383,
+          "per_user_median": 0.8375612876563931,
+          "per_user_defined": 1757
+        },
+        "d1_rank_drop_vs_new_concepts": {
+          "global_spearman": 0.9999999999999999,
+          "per_user_mean": 1.0,
+          "per_user_median": 1.0,
+          "per_user_defined": 1757
+        },
+        "d2_rank_drop_vs_new_concepts": {
+          "global_spearman": 0.6712739794927074,
+          "per_user_mean": 0.7974383444087908,
+          "per_user_median": 0.8318932284903128,
+          "per_user_defined": 1757
+        }
+      },
+      "component_summary": {
+        "mean_abs_delta": 10.672851331846214,
+        "median_abs_delta": 5.0,
+        "mean_edge_drop": 33.9979267812623,
+        "median_edge_drop": 21.0,
+        "mean_abs_d1_rank_drop": 19.246581813410312,
+        "mean_abs_d2_rank_drop": 6.34927174911429,
+        "mean_cancellation_fraction": 0.7041456518269269,
+        "median_cancellation_fraction": 0.8208955223880597,
+        "edge_unique_dominant_fraction": 0.6389187770633775,
+        "d1_unique_dominant_fraction": 0.21162577089620785,
+        "d2_unique_dominant_fraction": 0.0,
+        "dominant_tie_fraction": 0.14945545204041463,
+        "edge_drop_per_new_concept": {
+          "count": 34270,
+          "mean": 2.003049767995801,
+          "median": 1.5,
+          "p90": 3.5
+        }
+      },
+      "ranges": {
+        "delta": [
+          -42,
+          76
+        ],
+        "edge_drop": [
+          0,
+          183
+        ],
+        "d1_rank_drop": [
+          0,
+          100
+        ],
+        "d2_rank_drop": [
+          0,
+          66
+        ]
+      },
+      "evaluator_component_cache_size": 7398
+    }
+  },
+  "selection_performed": false,
+  "recommendation_metrics_evaluated": false,
+  "target_performance_evaluated": false,
+  "development_test_evaluated": false
+}

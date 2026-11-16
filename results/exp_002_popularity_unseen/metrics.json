@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_002_popularity_unseen",
+  "status": "completed",
+  "parent_experiment": "exp_001_popularity_baseline",
+  "code_commit": "2811e7d671b62acc31e4cc382b9458fe8784d0b3",
+  "seed": 42,
+  "deterministic": true,
+  "data": {
+    "sequences_path": "data\\processed\\mooccube2x_cs\\sequences.jsonl",
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_vocab_path": "data\\processed\\mooccube2x_cs\\course_vocab.json",
+    "course_vocab_sha256": "6cbe2f9d7cfe8759d3b5430080677349891f72303755498765579eabf3b72ee7",
+    "candidate_courses": 117
+  },
+  "split": {
+    "protocol": "temporal_leave_two_out",
+    "min_sequence_length": 5,
+    "users": 28589,
+    "train_events": 146061,
+    "validation_targets": 28589,
+    "test_targets": 28589
+  },
+  "ranking_policy": "full_catalog_exclude_history",
+  "repeat_diagnostics": {
+    "users": 28589,
+    "users_with_any_repeat": 0,
+    "repeated_course_events": 0,
+    "validation_targets_seen_in_train": 0,
+    "test_targets_seen_in_history": 0
+  },
+  "training_catalog": {
+    "items_observed_in_train": 115,
+    "zero_frequency_items": 2,
+    "cold_validation_targets": 1,
+    "cold_test_targets": 1
+  },
+  "validation": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.2678175600858545,
+    "recall@5": 0.37423484556997444,
+    "ndcg@5": 0.26073692125997555,
+    "recall@10": 0.5362202245618944,
+    "ndcg@10": 0.3131293255268831,
+    "recall@20": 0.7495190457868411,
+    "ndcg@20": 0.36675132771206453
+  },
+  "test": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.26497915838445624,
+    "recall@5": 0.34828080730350836,
+    "ndcg@5": 0.2502046583745359,
+    "recall@10": 0.5307985588862849,
+    "ndcg@10": 0.30935125987243356,
+    "recall@20": 0.7523173248452202,
+    "ndcg@20": 0.3642719091899473
+  },
+  "top_20_training_popularity": [
+    {"course": "C_883345", "count": 12124},
+    {"course": "C_697791", "count": 11137},
+    {"course": "C_697821", "count": 8876},
+    {"course": "C_770738", "count": 8482},
+    {"course": "C_677010", "count": 7887},
+    {"course": "C_676937", "count": 5805},
+    {"course": "C_735157", "count": 5489},
+    {"course": "C_694136", "count": 5349},
+    {"course": "C_677218", "count": 4463},
+    {"course": "C_854866", "count": 4062},
+    {"course": "C_696554", "count": 3768},
+    {"course": "C_697828", "count": 3564},
+    {"course": "C_696922", "count": 3528},
+    {"course": "C_680762", "count": 3501},
+    {"course": "C_682759", "count": 3480},
+    {"course": "C_696855", "count": 3304},
+    {"course": "C_682308", "count": 2785},
+    {"course": "C_682379", "count": 2681},
+    {"course": "C_676953", "count": 2658},
+    {"course": "C_697797", "count": 2559}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "source_experiment": "exp_012_hybrid_alpha_ablation",
+  "main_topology": "signed_delta_beta1",
+  "selection_metric": "ndcg@10",
+  "selected_alpha": 1.0,
+  "selected_metrics": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.3428827656609601,
+    "recall@5": 0.5082724124663333,
+    "ndcg@5": 0.35279091781245636,
+    "recall@10": 0.6912099059078667,
+    "ndcg@10": 0.41174312266490054,
+    "recall@20": 0.8682010563503445,
+    "ndcg@20": 0.4567581396383914
+  },
+  "sasrec_baseline_metrics": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.3428827656609601,
+    "recall@5": 0.5082724124663333,
+    "ndcg@5": 0.35279091781245636,
+    "recall@10": 0.6912099059078667,
+    "ndcg@10": 0.41174312266490054,
+    "recall@20": 0.8682010563503445,
+    "ndcg@20": 0.4567581396383914
+  },
+  "topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+  "sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+  "development_test_evaluated": false,
+  "note": "This freezes the validation-selected signed-topology alpha subject to post-run review; clamped topology is an ablation."
+}

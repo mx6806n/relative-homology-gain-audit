@@ -1,0 +1,15 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_004_bpr_mf_pilot",
+  "min_sequence_length": 5,
+  "cutoffs": [5, 10, 20],
+  "seed": 42,
+  "embedding_dim": 32,
+  "learning_rate": 0.003,
+  "l2": 0.000001,
+  "batch_size": 4096,
+  "max_epochs": 60,
+  "eval_every": 2,
+  "patience": 6,
+  "selection_metric": "ndcg@10"
+}

@@ -1,0 +1,9 @@
+{
+  "output_dir": "results/exp_016_secondary_domain_feasibility",
+  "domains": ["math", "psy"],
+  "feasibility_thresholds": {
+    "min_users_ge5": 2000,
+    "min_unique_courses": 30,
+    "min_concept_coverage_percent": 50.0
+  }
+}

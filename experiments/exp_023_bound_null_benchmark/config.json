@@ -1,0 +1,13 @@
+{
+  "experiment_id": "exp_023_bound_null_benchmark",
+  "output_dir": "results/exp_023_bound_null_benchmark",
+  "processed_cs_dir": "data/processed/mooccube2x_cs",
+  "min_sequence_length": 5,
+  "evaluator_cache_size": 524288,
+  "exp018_metrics": "results/exp_018_relative_chain_decomposition/metrics.json",
+  "exp021_metrics": "results/exp_021_doris_v3_semester_bundle_mechanism/metrics.json",
+  "bootstrap_replicates": 1000,
+  "random_bundle_replicates": 5,
+  "excess_margin": 0.05,
+  "seed": 20261012
+}

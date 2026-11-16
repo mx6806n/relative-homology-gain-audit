@@ -1,0 +1,21 @@
+{
+  "source_experiment": "exp_006_sasrec_validation_sweep",
+  "selection_metric": "ndcg@10",
+  "selected_candidate_id": "wide_128x2_d20_lr1e3",
+  "seed_used_for_selection": 42,
+  "test_evaluated_during_selection": false,
+  "config": {
+    "max_seq_len": 50,
+    "embedding_dim": 128,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-06,
+    "batch_size": 512,
+    "eval_batch_size": 1024,
+    "max_epochs": 40,
+    "patience": 5,
+    "selection_metric": "ndcg@10"
+  }
+}

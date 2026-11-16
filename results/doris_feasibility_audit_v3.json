@@ -1,0 +1,257 @@
+{
+  "audit_version": 3,
+  "status": "preliminary_pending_disjoint_manual_precision_review",
+  "repair_basis": "v2 independent precision error taxonomy only; topology outcomes were not used to define v3 matching rules",
+  "mirror_policy": "English supplement is canonical; Chinese supplement is archive consistency metadata only.",
+  "holdout_policy": {
+    "seed": 20261011,
+    "excluded_v2_review_edges": 100,
+    "eligible_disjoint_holdout_pool": 1027,
+    "sample_size": 100
+  },
+  "archives": [
+    [
+      {
+        "archive": "S1.zip",
+        "member": "__MACOSX/._datasetInChinese",
+        "bytes": 163,
+        "suffix": "",
+        "tabular": false
+      },
+      {
+        "archive": "S1.zip",
+        "member": "datasetInChinese/StudentInformationTable.xlsx",
+        "bytes": 108464,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 4568,
+        "columns": [
+          "StudentId",
+          "EnrollmentYear",
+          "Education",
+          "Major"
+        ]
+      },
+      {
+        "archive": "S1.zip",
+        "member": "__MACOSX/datasetInChinese/._StudentInformationTable.xlsx",
+        "bytes": 231,
+        "suffix": ".xlsx",
+        "tabular": false
+      },
+      {
+        "archive": "S1.zip",
+        "member": "datasetInChinese/CourseInformationTable.xlsx",
+        "bytes": 2003754,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 5591,
+        "columns": [
+          "CourseId",
+          "Name",
+          "College",
+          "Type",
+          "Grade",
+          "Prerequisite",
+          "Introduction"
+        ]
+      },
+      {
+        "archive": "S1.zip",
+        "member": "__MACOSX/datasetInChinese/._CourseInformationTable.xlsx",
+        "bytes": 287,
+        "suffix": ".xlsx",
+        "tabular": false
+      },
+      {
+        "archive": "S1.zip",
+        "member": "datasetInChinese/CourseSelectionTable.xlsx",
+        "bytes": 7596300,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 208949,
+        "columns": [
+          "StudedntId",
+          "AcademicYear",
+          "Semester",
+          "CourseId",
+          "CourseName",
+          "CourseCollege",
+          "Score"
+        ]
+      },
+      {
+        "archive": "S1.zip",
+        "member": "__MACOSX/datasetInChinese/._CourseSelectionTable.xlsx",
+        "bytes": 287,
+        "suffix": ".xlsx",
+        "tabular": false
+      },
+      {
+        "archive": "S1.zip",
+        "member": "datasetInChinese/README",
+        "bytes": 669,
+        "suffix": "",
+        "tabular": false
+      },
+      {
+        "archive": "S1.zip",
+        "member": "__MACOSX/datasetInChinese/._README",
+        "bytes": 270,
+        "suffix": "",
+        "tabular": false
+      }
+    ],
+    [
+      {
+        "archive": "S2.zip",
+        "member": "__MACOSX/._datasetInEnglish",
+        "bytes": 163,
+        "suffix": "",
+        "tabular": false
+      },
+      {
+        "archive": "S2.zip",
+        "member": "datasetInEnglish/README",
+        "bytes": 717,
+        "suffix": "",
+        "tabular": false
+      },
+      {
+        "archive": "S2.zip",
+        "member": "__MACOSX/datasetInEnglish/._README",
+        "bytes": 270,
+        "suffix": "",
+        "tabular": false
+      },
+      {
+        "archive": "S2.zip",
+        "member": "datasetInEnglish/CourseInformationTable.xlsx",
+        "bytes": 1823426,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 5591,
+        "columns": [
+          "CourseId",
+          "CourseName",
+          "College",
+          "Type",
+          "Grade",
+          "Prerequisite",
+          "Introduction"
+        ]
+      },
+      {
+        "archive": "S2.zip",
+        "member": "__MACOSX/datasetInEnglish/._CourseInformationTable.xlsx",
+        "bytes": 287,
+        "suffix": ".xlsx",
+        "tabular": false
+      },
+      {
+        "archive": "S2.zip",
+        "member": "datasetInEnglish/CourseSelectionTable.xlsx",
+        "bytes": 6506245,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 208949,
+        "columns": [
+          "StudedntId",
+          "AcademicYear",
+          "Semester",
+          "CourseId",
+          "CourseName",
+          "CourseCollege",
+          "Score"
+        ]
+      },
+      {
+        "archive": "S2.zip",
+        "member": "__MACOSX/datasetInEnglish/._CourseSelectionTable.xlsx",
+        "bytes": 287,
+        "suffix": ".xlsx",
+        "tabular": false
+      },
+      {
+        "archive": "S2.zip",
+        "member": "datasetInEnglish/StudentInformationTable.xlsx",
+        "bytes": 117727,
+        "suffix": ".xlsx",
+        "tabular": true,
+        "rows": 4568,
+        "columns": [
+          "StudentId",
+          "EnrollmentYear",
+          "Education",
+          "Major"
+        ]
+      },
+      {
+        "archive": "S2.zip",
+        "member": "__MACOSX/datasetInEnglish/._StudentInformationTable.xlsx",
+        "bytes": 231,
+        "suffix": ".xlsx",
+        "tabular": false
+      }
+    ]
+  ],
+  "catalog": {
+    "source": "S2.zip:datasetInEnglish/CourseInformationTable.xlsx",
+    "course_id_column": "CourseId",
+    "course_name_column": "CourseName",
+    "course_ids": 5591,
+    "normalized_names": 5084,
+    "unambiguous_normalized_names": 4682,
+    "ambiguous_normalized_names": 402
+  },
+  "prerequisites": {
+    "canonical_source": "S2.zip:datasetInEnglish/CourseInformationTable.xlsx",
+    "resolver": "v3 exact unambiguous course-phrase resolver; no arbitrary substring matches; no bare numeric CourseId matches",
+    "nonempty_prerequisite_rows": 2181,
+    "resolved_rows": 756,
+    "row_resolution_fraction": 0.3466299862448418,
+    "rows_without_usable_nonself_match": 1425,
+    "unique_nonself_edges": 1088,
+    "distinct_graph_courses": 927,
+    "graph_is_dag": true,
+    "strongly_connected_components_gt1": 0,
+    "largest_strongly_connected_component": 1
+  },
+  "sequence_and_alignment": {
+    "canonical_source": "S2.zip:datasetInEnglish/CourseSelectionTable.xlsx",
+    "rows": 208949,
+    "students": 4568,
+    "students_ge5_events": 4565,
+    "students_ge3_semesters": 4395,
+    "distinct_history_courses": 5591,
+    "graph_courses_in_histories": 927,
+    "graph_course_history_coverage_fraction": 1.0,
+    "graph_mapped_events": 33969,
+    "students_ge3_graph_mapped_events": 3785
+  },
+  "feasibility_thresholds": {
+    "students_ge5_events": 2000,
+    "students_ge3_semesters": 1500,
+    "prerequisite_row_resolution_fraction": 0.25,
+    "unique_prerequisite_edges": 500,
+    "distinct_graph_courses": 300,
+    "manual_edge_precision": 0.9,
+    "graph_courses_in_histories_min": 500,
+    "graph_course_history_coverage_fraction_if_graph_lt500": 0.8,
+    "students_ge3_graph_mapped_events": 2000
+  },
+  "preliminary_gate": {
+    "students_ge5_events": true,
+    "students_ge3_semesters": true,
+    "prerequisite_row_resolution_fraction": true,
+    "unique_prerequisite_edges": true,
+    "distinct_graph_courses": true,
+    "graph_course_history_alignment": true,
+    "students_ge3_graph_mapped_events": true
+  },
+  "preliminary_all_nonmanual_gates_pass": true,
+  "manual_precision_gate_evaluated": false,
+  "edge_output": "results\\doris_candidate_prerequisite_edges_v3.csv",
+  "manual_review_sample": "results\\doris_prerequisite_manual_holdout_v3.csv",
+  "note": "Scientific use remains blocked until the new disjoint v3 manual holdout reaches the unchanged 0.90 precision threshold."
+}

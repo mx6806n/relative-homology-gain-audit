@@ -1,0 +1,17 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "topology_cache_path": "results/exp_010_validation_topology_cache/validation_topology_cache.npz",
+  "sasrec_cache_path": "results/exp_011_sasrec_validation_score_cache/validation_sasrec_scores.npz",
+  "expected_topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+  "expected_sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+  "output_dir": "results/exp_014_accuracy_validity_pareto",
+  "min_sequence_length": 5,
+  "top_ns": [10, 20],
+  "alphas": [
+    0.0, 0.05, 0.1, 0.15, 0.2,
+    0.25, 0.3, 0.35, 0.4, 0.45,
+    0.5, 0.55, 0.6, 0.65, 0.7,
+    0.75, 0.8, 0.85, 0.9, 0.95,
+    1.0
+  ]
+}

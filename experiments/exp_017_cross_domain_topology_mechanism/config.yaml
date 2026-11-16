@@ -1,0 +1,11 @@
+{
+  "output_dir": "results/exp_017_cross_domain_topology_mechanism",
+  "domains": ["math", "psy"],
+  "min_sequence_length": 5,
+  "evaluator_cache_size": 131072,
+  "cs_reference": {
+    "abs_delta_vs_new_concept_spearman": 0.8190284183456519,
+    "abs_delta_vs_bundle_size_spearman": 0.5609328111363182,
+    "structural_count_r2": 0.738115
+  }
+}

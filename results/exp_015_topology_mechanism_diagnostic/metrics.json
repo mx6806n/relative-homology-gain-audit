@@ -1,0 +1,1282 @@
+{
+  "experiment_id": "exp_015_topology_mechanism_diagnostic",
+  "status": "completed",
+  "phase": "mechanism_diagnostic",
+  "evidence_scope": "validation_only",
+  "inputs": {
+    "users": 28589,
+    "courses": 117,
+    "candidate_entries": 3198852,
+    "topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+    "sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_to_concepts_sha256": "42e6429b1a93147154c6d0a46d24e5affa0266df31fb7f39145a2a5ae6ab3f67",
+    "prerequisite_edges_sha256": "e8267fc646a5bea5df681afc16ee63a115709771ed3114e2c2832d111091d0f6"
+  },
+  "correlations": {
+    "delta_vs_bundle_size": {
+      "global_spearman": -0.018240318698522485,
+      "per_user_mean": -0.026782566455585848,
+      "per_user_median": -0.00015324151459427676,
+      "per_user_defined": 28580
+    },
+    "delta_vs_new_concept_count": {
+      "global_spearman": -0.2945005914350542,
+      "per_user_mean": -0.12903169237348786,
+      "per_user_median": -0.15473984667721052,
+      "per_user_defined": 28580
+    },
+    "abs_delta_vs_bundle_size": {
+      "global_spearman": 0.5609328111363182,
+      "per_user_mean": 0.5947833972971308,
+      "per_user_median": 0.5686423845862232,
+      "per_user_defined": 28580
+    },
+    "abs_delta_vs_new_concept_count": {
+      "global_spearman": 0.8190284183456519,
+      "per_user_mean": 0.8149695341268349,
+      "per_user_median": 0.8194830001972295,
+      "per_user_defined": 28580
+    },
+    "delta_vs_unmet_direct_count": {
+      "global_spearman": -0.10031841045155203,
+      "per_user_mean": 0.0424564616208535,
+      "per_user_median": 0.04716569107138752,
+      "per_user_defined": 28580
+    },
+    "delta_vs_unmet_ancestor_count": {
+      "global_spearman": -0.3416833554442575,
+      "per_user_mean": -0.027944613207601336,
+      "per_user_median": -0.050450183720063005,
+      "per_user_defined": 28580
+    },
+    "delta_vs_sasrec_logit": {
+      "global_spearman": 0.03764062854890697,
+      "per_user_mean": 0.04204634024097902,
+      "per_user_median": 0.03626595920241102,
+      "per_user_defined": 28580
+    }
+  },
+  "linear_structural_count_r2": 0.7381147813568261,
+  "target_profiles": {
+    "new_concept_count": {
+      "users": 28589,
+      "target_signal_mean": 6.883346741753821,
+      "target_signal_median": 0.0,
+      "target_feature_mean": 14.006331106369583,
+      "target_feature_median": 4.0,
+      "mean_target_signal_weak_percentile": 0.6182105213246339,
+      "mean_target_feature_weak_percentile": 0.6497155458774287
+    },
+    "bundle_size": {
+      "users": 28589,
+      "target_signal_mean": 6.883346741753821,
+      "target_signal_median": 0.0,
+      "target_feature_mean": 23.919339606142223,
+      "target_feature_median": 11.0,
+      "mean_target_signal_weak_percentile": 0.6182105213246339,
+      "mean_target_feature_weak_percentile": 0.6311466712693438
+    },
+    "unmet_direct_count": {
+      "users": 28589,
+      "target_signal_mean": 6.883346741753821,
+      "target_signal_median": 0.0,
+      "target_feature_mean": 19.816048130399803,
+      "target_feature_median": 12.0,
+      "mean_target_signal_weak_percentile": 0.6182105213246339,
+      "mean_target_feature_weak_percentile": 0.6133778796983039
+    },
+    "unmet_ancestor_count": {
+      "users": 28589,
+      "target_signal_mean": 6.883346741753821,
+      "target_signal_median": 0.0,
+      "target_feature_mean": 74.78131449158768,
+      "target_feature_median": 79.0,
+      "mean_target_signal_weak_percentile": 0.6182105213246339,
+      "mean_target_feature_weak_percentile": 0.5766513634187199
+    }
+  },
+  "course_level": {
+    "mean_delta_vs_bundle_size_spearman": -0.22959352386974924,
+    "courses": [
+      {
+        "course_id": "C_1169394",
+        "candidate_count": 28588,
+        "bundle_size": 6,
+        "mean_delta_beta1": -0.547152651462152,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.08937316356513222,
+        "zero_fraction": 0.5433398628795298,
+        "negative_fraction": 0.3672869735553379
+      },
+      {
+        "course_id": "C_1410156",
+        "candidate_count": 27973,
+        "bundle_size": 118,
+        "mean_delta_beta1": 64.42251456761878,
+        "median_delta_beta1": 83.0,
+        "positive_fraction": 0.6987094698459229,
+        "zero_fraction": 0.30129053015407714,
+        "negative_fraction": 0.0
+      },
+      {
+        "course_id": "C_1742805",
+        "candidate_count": 28563,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.45607954346532226,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.1802331687847915,
+        "zero_fraction": 0.45387389279837553,
+        "negative_fraction": 0.36589293841683296
+      },
+      {
+        "course_id": "C_1756067",
+        "candidate_count": 28541,
+        "bundle_size": 17,
+        "mean_delta_beta1": -1.82330682176518,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0017518657370099156,
+        "zero_fraction": 0.5213202060194106,
+        "negative_fraction": 0.47692792824357944
+      },
+      {
+        "course_id": "C_1756069",
+        "candidate_count": 28519,
+        "bundle_size": 26,
+        "mean_delta_beta1": -3.2220624846593497,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.00757389810301904,
+        "zero_fraction": 0.5123251165889408,
+        "negative_fraction": 0.48010098530804024
+      },
+      {
+        "course_id": "C_1764843",
+        "candidate_count": 28572,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.5861682766344674,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.00038499230015399694,
+        "zero_fraction": 0.4395562088758225,
+        "negative_fraction": 0.5600587988240235
+      },
+      {
+        "course_id": "C_1764865",
+        "candidate_count": 28475,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.1492537313432836,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.1371729587357331,
+        "negative_fraction": 0.8628270412642669
+      },
+      {
+        "course_id": "C_1765606",
+        "candidate_count": 28284,
+        "bundle_size": 9,
+        "mean_delta_beta1": -0.38283128270400224,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.34839485221326544,
+        "zero_fraction": 0.17674303493141,
+        "negative_fraction": 0.4748621128553246
+      },
+      {
+        "course_id": "C_1774985",
+        "candidate_count": 28563,
+        "bundle_size": 4,
+        "mean_delta_beta1": -1.2038651402163638,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.01281378006511921,
+        "zero_fraction": 0.1882505339075027,
+        "negative_fraction": 0.7989356860273781
+      },
+      {
+        "course_id": "C_1791152",
+        "candidate_count": 28587,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.45569664532829607,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.1800818553888131,
+        "zero_fraction": 0.4543323888480778,
+        "negative_fraction": 0.3655857557631091
+      },
+      {
+        "course_id": "C_1797899",
+        "candidate_count": 28498,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.0054038879921398,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9945961120078602,
+        "negative_fraction": 0.0054038879921398
+      },
+      {
+        "course_id": "C_1833535",
+        "candidate_count": 28588,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.1447110675808032,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.14058346159227647,
+        "negative_fraction": 0.8594165384077235
+      },
+      {
+        "course_id": "C_2091183",
+        "candidate_count": 28588,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.27952287673149573,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.14058346159227647,
+        "zero_fraction": 0.46704911151532114,
+        "negative_fraction": 0.3923674268924024
+      },
+      {
+        "course_id": "C_2337981",
+        "candidate_count": 28588,
+        "bundle_size": 26,
+        "mean_delta_beta1": -3.2142857142857144,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.007555617741709809,
+        "zero_fraction": 0.5135021687421296,
+        "negative_fraction": 0.4789422135161606
+      },
+      {
+        "course_id": "C_2337996",
+        "candidate_count": 28588,
+        "bundle_size": 17,
+        "mean_delta_beta1": -1.8203092206520217,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.001748985588358752,
+        "zero_fraction": 0.5221071778368547,
+        "negative_fraction": 0.47614383657478665
+      },
+      {
+        "course_id": "C_2338005",
+        "candidate_count": 28588,
+        "bundle_size": 12,
+        "mean_delta_beta1": -1.5652371624457815,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.19693577724919548,
+        "negative_fraction": 0.8030642227508046
+      },
+      {
+        "course_id": "C_2338031",
+        "candidate_count": 28588,
+        "bundle_size": 124,
+        "mean_delta_beta1": 69.42727717923604,
+        "median_delta_beta1": 92.0,
+        "positive_fraction": 0.6895550580663216,
+        "zero_fraction": 0.31044494193367844,
+        "negative_fraction": 0.0
+      },
+      {
+        "course_id": "C_2338049",
+        "candidate_count": 28588,
+        "bundle_size": 46,
+        "mean_delta_beta1": 10.057471666433468,
+        "median_delta_beta1": 2.0,
+        "positive_fraction": 0.5590457534629915,
+        "zero_fraction": 0.1949419336784665,
+        "negative_fraction": 0.24601231285854205
+      },
+      {
+        "course_id": "C_2338059",
+        "candidate_count": 28588,
+        "bundle_size": 18,
+        "mean_delta_beta1": -3.2219112914509584,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.13530152511543306,
+        "zero_fraction": 0.19385756261368406,
+        "negative_fraction": 0.6708409122708829
+      },
+      {
+        "course_id": "C_2338076",
+        "candidate_count": 28588,
+        "bundle_size": 21,
+        "mean_delta_beta1": -1.892087589198265,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.3097103679865678,
+        "zero_fraction": 0.1783965300125927,
+        "negative_fraction": 0.5118931020008395
+      },
+      {
+        "course_id": "C_2341225",
+        "candidate_count": 28588,
+        "bundle_size": 9,
+        "mean_delta_beta1": 0.3118091506925983,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.2751504127605989,
+        "zero_fraction": 0.35780747166643345,
+        "negative_fraction": 0.3670421155729677
+      },
+      {
+        "course_id": "C_2341259",
+        "candidate_count": 28588,
+        "bundle_size": 1,
+        "mean_delta_beta1": 0.17972575905974536,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.23237022526934378,
+        "zero_fraction": 0.6997691339023366,
+        "negative_fraction": 0.06786064082831958
+      },
+      {
+        "course_id": "C_2341274",
+        "candidate_count": 28589,
+        "bundle_size": 8,
+        "mean_delta_beta1": -0.4502780789814264,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.18020917135961384,
+        "zero_fraction": 0.45720381965091467,
+        "negative_fraction": 0.3625870089894715
+      },
+      {
+        "course_id": "C_2341305",
+        "candidate_count": 28589,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.005386687187379761,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9946133128126202,
+        "negative_fraction": 0.005386687187379761
+      },
+      {
+        "course_id": "C_597208",
+        "candidate_count": 28586,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.041453858532148606,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9585461414678514,
+        "negative_fraction": 0.041453858532148606
+      },
+      {
+        "course_id": "C_655850",
+        "candidate_count": 28576,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.2796402575587906,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.14064249720044794,
+        "zero_fraction": 0.4668253079507279,
+        "negative_fraction": 0.3925321948488242
+      },
+      {
+        "course_id": "C_676937",
+        "candidate_count": 22784,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.006759129213483146,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9932408707865169,
+        "negative_fraction": 0.006759129213483146
+      },
+      {
+        "course_id": "C_676953",
+        "candidate_count": 25931,
+        "bundle_size": 21,
+        "mean_delta_beta1": -2.6486059156993558,
+        "median_delta_beta1": -3.0,
+        "positive_fraction": 0.410165439049786,
+        "zero_fraction": 0.03563302610774748,
+        "negative_fraction": 0.5542015348424666
+      },
+      {
+        "course_id": "C_677010",
+        "candidate_count": 20702,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.36455414935755,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.05728915080668535,
+        "zero_fraction": 0.3154767655299005,
+        "negative_fraction": 0.6272340836634142
+      },
+      {
+        "course_id": "C_677066",
+        "candidate_count": 28588,
+        "bundle_size": 21,
+        "mean_delta_beta1": -1.892087589198265,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.3097103679865678,
+        "zero_fraction": 0.1783965300125927,
+        "negative_fraction": 0.5118931020008395
+      },
+      {
+        "course_id": "C_677157",
+        "candidate_count": 27763,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.0760364513921405,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.26751431761697225,
+        "negative_fraction": 0.7324856823830278
+      },
+      {
+        "course_id": "C_677218",
+        "candidate_count": 24126,
+        "bundle_size": 46,
+        "mean_delta_beta1": 11.917557821437454,
+        "median_delta_beta1": 5.0,
+        "positive_fraction": 0.6624388626378181,
+        "zero_fraction": 0.046049904667164056,
+        "negative_fraction": 0.29151123269501783
+      },
+      {
+        "course_id": "C_680745",
+        "candidate_count": 26184,
+        "bundle_size": 4,
+        "mean_delta_beta1": -1.1118622059272838,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.13748854262144822,
+        "zero_fraction": 0.18667888787045525,
+        "negative_fraction": 0.6758325695080966
+      },
+      {
+        "course_id": "C_680747",
+        "candidate_count": 28106,
+        "bundle_size": 13,
+        "mean_delta_beta1": 1.0599160321639507,
+        "median_delta_beta1": 1.0,
+        "positive_fraction": 0.5590977015583861,
+        "zero_fraction": 0.05756777912189568,
+        "negative_fraction": 0.38333451931971824
+      },
+      {
+        "course_id": "C_680762",
+        "candidate_count": 25088,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.8029336734693877,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.029416454081632654,
+        "zero_fraction": 0.177734375,
+        "negative_fraction": 0.7928491709183674
+      },
+      {
+        "course_id": "C_680892",
+        "candidate_count": 28579,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.8193428741383534,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.02463347212988558,
+        "zero_fraction": 0.45176528220021694,
+        "negative_fraction": 0.5236012456698975
+      },
+      {
+        "course_id": "C_680910",
+        "candidate_count": 27968,
+        "bundle_size": 18,
+        "mean_delta_beta1": -3.2933352402745997,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.13830091533180777,
+        "zero_fraction": 0.17598684210526316,
+        "negative_fraction": 0.6857122425629291
+      },
+      {
+        "course_id": "C_680931",
+        "candidate_count": 28029,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.43447857576081916,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.6190017481893753,
+        "negative_fraction": 0.3809982518106247
+      },
+      {
+        "course_id": "C_680992",
+        "candidate_count": 28369,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.7238887518065494,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.2761112481934506,
+        "negative_fraction": 0.7238887518065494
+      },
+      {
+        "course_id": "C_681336",
+        "candidate_count": 28415,
+        "bundle_size": 4,
+        "mean_delta_beta1": -0.663100475101179,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.2583142706317086,
+        "zero_fraction": 0.24842512757346472,
+        "negative_fraction": 0.49326060179482667
+      },
+      {
+        "course_id": "C_681345",
+        "candidate_count": 28408,
+        "bundle_size": 4,
+        "mean_delta_beta1": -1.2104336806533371,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.01288369473387778,
+        "zero_fraction": 0.18382145874401576,
+        "negative_fraction": 0.8032948465221065
+      },
+      {
+        "course_id": "C_681357",
+        "candidate_count": 28485,
+        "bundle_size": 9,
+        "mean_delta_beta1": 0.1241004037212568,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.4514305774969282,
+        "zero_fraction": 0.07228365806564858,
+        "negative_fraction": 0.4762857644374232
+      },
+      {
+        "course_id": "C_681485",
+        "candidate_count": 28588,
+        "bundle_size": 16,
+        "mean_delta_beta1": -3.98922624877571,
+        "median_delta_beta1": -5.0,
+        "positive_fraction": 0.034245137820064366,
+        "zero_fraction": 0.20239261228487476,
+        "negative_fraction": 0.7633622498950609
+      },
+      {
+        "course_id": "C_681678",
+        "candidate_count": 26367,
+        "bundle_size": 49,
+        "mean_delta_beta1": 15.197178291045626,
+        "median_delta_beta1": 14.0,
+        "positive_fraction": 0.9562331702506921,
+        "zero_fraction": 0.022376455417757044,
+        "negative_fraction": 0.0213903743315508
+      },
+      {
+        "course_id": "C_681684",
+        "candidate_count": 28434,
+        "bundle_size": 26,
+        "mean_delta_beta1": 14.613104030386157,
+        "median_delta_beta1": 9.0,
+        "positive_fraction": 0.739677850460716,
+        "zero_fraction": 0.06928325244425687,
+        "negative_fraction": 0.19103889709502708
+      },
+      {
+        "course_id": "C_681692",
+        "candidate_count": 28588,
+        "bundle_size": 5,
+        "mean_delta_beta1": -0.5632083391632853,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.06135441443962502,
+        "zero_fraction": 0.5139219252833357,
+        "negative_fraction": 0.42472366027703934
+      },
+      {
+        "course_id": "C_681729",
+        "candidate_count": 28588,
+        "bundle_size": 6,
+        "mean_delta_beta1": -2.101755981530712,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.0011893102000839512,
+        "zero_fraction": 0.07258290191688821,
+        "negative_fraction": 0.9262277878830278
+      },
+      {
+        "course_id": "C_681745",
+        "candidate_count": 28480,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.030582865168539326,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0044943820224719105,
+        "zero_fraction": 0.9604283707865169,
+        "negative_fraction": 0.035077247191011234
+      },
+      {
+        "course_id": "C_681767",
+        "candidate_count": 28588,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.46781866517419896,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.35770253253113193,
+        "zero_fraction": 0.055862599692178536,
+        "negative_fraction": 0.5864348677766895
+      },
+      {
+        "course_id": "C_681803",
+        "candidate_count": 28588,
+        "bundle_size": 11,
+        "mean_delta_beta1": -1.7846299146495033,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.08209738351755981,
+        "zero_fraction": 0.26168322373023645,
+        "negative_fraction": 0.6562193927522038
+      },
+      {
+        "course_id": "C_681885",
+        "candidate_count": 28588,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.8833776409682385,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.043514761438365746,
+        "zero_fraction": 0.4422135161606268,
+        "negative_fraction": 0.5142717224010074
+      },
+      {
+        "course_id": "C_681896",
+        "candidate_count": 28588,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.7586050090947251,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.24139499090527494,
+        "negative_fraction": 0.7586050090947251
+      },
+      {
+        "course_id": "C_681932",
+        "candidate_count": 28588,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.26665034280117533,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.09955225968938015,
+        "zero_fraction": 0.5925912970477123,
+        "negative_fraction": 0.3078564432629075
+      },
+      {
+        "course_id": "C_682129",
+        "candidate_count": 27204,
+        "bundle_size": 6,
+        "mean_delta_beta1": -2.208682546684311,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.0012498162034994854,
+        "zero_fraction": 0.025400676371121894,
+        "negative_fraction": 0.9733495074253786
+      },
+      {
+        "course_id": "C_682184",
+        "candidate_count": 26863,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.9401034880690913,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.04630904962215687,
+        "zero_fraction": 0.40639541376614674,
+        "negative_fraction": 0.5472955366116964
+      },
+      {
+        "course_id": "C_682189",
+        "candidate_count": 26790,
+        "bundle_size": 1,
+        "mean_delta_beta1": 0.1917879805897723,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.24796565882792088,
+        "zero_fraction": 0.6796192609182531,
+        "negative_fraction": 0.07241508025382605
+      },
+      {
+        "course_id": "C_682308",
+        "candidate_count": 25804,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.8404510928538211,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.1595489071461789,
+        "negative_fraction": 0.8404510928538211
+      },
+      {
+        "course_id": "C_682360",
+        "candidate_count": 26920,
+        "bundle_size": 25,
+        "mean_delta_beta1": -3.571731054977712,
+        "median_delta_beta1": -4.0,
+        "positive_fraction": 0.37544576523031203,
+        "zero_fraction": 0.025928677563150076,
+        "negative_fraction": 0.5986255572065379
+      },
+      {
+        "course_id": "C_682379",
+        "candidate_count": 25908,
+        "bundle_size": 11,
+        "mean_delta_beta1": -1.9692373012197004,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.09058977921877412,
+        "zero_fraction": 0.18530955689362358,
+        "negative_fraction": 0.7241006638876023
+      },
+      {
+        "course_id": "C_682381",
+        "candidate_count": 28100,
+        "bundle_size": 18,
+        "mean_delta_beta1": 1.8831672597864768,
+        "median_delta_beta1": 1.0,
+        "positive_fraction": 0.5148754448398577,
+        "zero_fraction": 0.03270462633451957,
+        "negative_fraction": 0.45241992882562276
+      },
+      {
+        "course_id": "C_682400",
+        "candidate_count": 28171,
+        "bundle_size": 36,
+        "mean_delta_beta1": 15.945653331440134,
+        "median_delta_beta1": 8.0,
+        "positive_fraction": 0.7182563629264137,
+        "zero_fraction": 0.022789393347768982,
+        "negative_fraction": 0.2589542437258173
+      },
+      {
+        "course_id": "C_682493",
+        "candidate_count": 28472,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.2677367237988199,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.09995785332958697,
+        "zero_fraction": 0.5909314414161281,
+        "negative_fraction": 0.3091107052542849
+      },
+      {
+        "course_id": "C_682520",
+        "candidate_count": 28513,
+        "bundle_size": 5,
+        "mean_delta_beta1": 0.5556412864307508,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.49219654192824325,
+        "zero_fraction": 0.2360326868445972,
+        "negative_fraction": 0.27177077122715954
+      },
+      {
+        "course_id": "C_682610",
+        "candidate_count": 26231,
+        "bundle_size": 22,
+        "mean_delta_beta1": -0.2067401166558652,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.4947199878006938,
+        "zero_fraction": 0.099729327894476,
+        "negative_fraction": 0.40555068430483016
+      },
+      {
+        "course_id": "C_682633",
+        "candidate_count": 28533,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.00539725931377703,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.994602740686223,
+        "negative_fraction": 0.00539725931377703
+      },
+      {
+        "course_id": "C_682637",
+        "candidate_count": 28172,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.04752946187704103,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.952896492971745,
+        "negative_fraction": 0.047103507028255005
+      },
+      {
+        "course_id": "C_682661",
+        "candidate_count": 28313,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.3458481969413343,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.023875958040476108,
+        "zero_fraction": 0.3544308268286653,
+        "negative_fraction": 0.6216932151308586
+      },
+      {
+        "course_id": "C_682672",
+        "candidate_count": 27620,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.30448950036205646,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0077480086893555395,
+        "zero_fraction": 0.6738957277335265,
+        "negative_fraction": 0.31835626357711805
+      },
+      {
+        "course_id": "C_682737",
+        "candidate_count": 28294,
+        "bundle_size": 13,
+        "mean_delta_beta1": -0.44277938785608256,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.3752385664805259,
+        "zero_fraction": 0.18346645931999717,
+        "negative_fraction": 0.44129497419947694
+      },
+      {
+        "course_id": "C_682745",
+        "candidate_count": 28588,
+        "bundle_size": 9,
+        "mean_delta_beta1": -1.0908772911711206,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.35360990625437244,
+        "zero_fraction": 0.15838813488176856,
+        "negative_fraction": 0.48800195886385894
+      },
+      {
+        "course_id": "C_682759",
+        "candidate_count": 25109,
+        "bundle_size": 10,
+        "mean_delta_beta1": -3.760563941216297,
+        "median_delta_beta1": -4.0,
+        "positive_fraction": 0.15229598948584172,
+        "zero_fraction": 0.13760006372217135,
+        "negative_fraction": 0.710103946791987
+      },
+      {
+        "course_id": "C_694136",
+        "candidate_count": 23240,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.050989672977624786,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9490103270223752,
+        "negative_fraction": 0.050989672977624786
+      },
+      {
+        "course_id": "C_696537",
+        "candidate_count": 28588,
+        "bundle_size": 22,
+        "mean_delta_beta1": -1.0162655659717363,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.363509164684483,
+        "zero_fraction": 0.17482859941234083,
+        "negative_fraction": 0.4616622359031762
+      },
+      {
+        "course_id": "C_696554",
+        "candidate_count": 24821,
+        "bundle_size": 17,
+        "mean_delta_beta1": -3.66278554449861,
+        "median_delta_beta1": -5.0,
+        "positive_fraction": 0.30518512549856974,
+        "zero_fraction": 0.0387977921920954,
+        "negative_fraction": 0.6560170823093349
+      },
+      {
+        "course_id": "C_696674",
+        "candidate_count": 28439,
+        "bundle_size": 7,
+        "mean_delta_beta1": 0.07036112380885404,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.41988114912619995,
+        "zero_fraction": 0.27838531593937904,
+        "negative_fraction": 0.30173353493442107
+      },
+      {
+        "course_id": "C_696773",
+        "candidate_count": 28161,
+        "bundle_size": 9,
+        "mean_delta_beta1": -0.8508575689783744,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0003551010262419658,
+        "zero_fraction": 0.5207201448812188,
+        "negative_fraction": 0.4789247540925393
+      },
+      {
+        "course_id": "C_696855",
+        "candidate_count": 25285,
+        "bundle_size": 33,
+        "mean_delta_beta1": -3.2437808977654736,
+        "median_delta_beta1": -5.0,
+        "positive_fraction": 0.3893217322523235,
+        "zero_fraction": 0.016768835277832708,
+        "negative_fraction": 0.5939094324698437
+      },
+      {
+        "course_id": "C_696922",
+        "candidate_count": 25061,
+        "bundle_size": 10,
+        "mean_delta_beta1": -1.4212122421292048,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.12704999800486813,
+        "zero_fraction": 0.23462750887833686,
+        "negative_fraction": 0.638322493116795
+      },
+      {
+        "course_id": "C_696938",
+        "candidate_count": 27012,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.4210350955131053,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.15667110913668,
+        "zero_fraction": 0.12016881386050644,
+        "negative_fraction": 0.7231600770028136
+      },
+      {
+        "course_id": "C_697030",
+        "candidate_count": 28281,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.5921997100526856,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.00038895371450797355,
+        "zero_fraction": 0.4337894699621654,
+        "negative_fraction": 0.5658215763233266
+      },
+      {
+        "course_id": "C_697063",
+        "candidate_count": 28210,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.8490606168025523,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.19294576391350585,
+        "negative_fraction": 0.8070542360864942
+      },
+      {
+        "course_id": "C_697091",
+        "candidate_count": 26965,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.1843500834414982,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.008752086037455961,
+        "zero_fraction": 0.36573335805674023,
+        "negative_fraction": 0.6255145559058038
+      },
+      {
+        "course_id": "C_697379",
+        "candidate_count": 28588,
+        "bundle_size": 34,
+        "mean_delta_beta1": 3.207429690779348,
+        "median_delta_beta1": 3.0,
+        "positive_fraction": 0.5715684902756402,
+        "zero_fraction": 0.045753462991464953,
+        "negative_fraction": 0.3826780467328949
+      },
+      {
+        "course_id": "C_697616",
+        "candidate_count": 28587,
+        "bundle_size": 9,
+        "mean_delta_beta1": -0.37877356840521914,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.3447021373351523,
+        "zero_fraction": 0.18546891943890578,
+        "negative_fraction": 0.4698289432259419
+      },
+      {
+        "course_id": "C_697686",
+        "candidate_count": 28588,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.1447110675808032,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.14058346159227647,
+        "negative_fraction": 0.8594165384077235
+      },
+      {
+        "course_id": "C_697721",
+        "candidate_count": 28035,
+        "bundle_size": 14,
+        "mean_delta_beta1": -1.9972177635098984,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.35327269484572854,
+        "zero_fraction": 0.1330123060460139,
+        "negative_fraction": 0.5137149991082576
+      },
+      {
+        "course_id": "C_697778",
+        "candidate_count": 27346,
+        "bundle_size": 18,
+        "mean_delta_beta1": 3.887405836319754,
+        "median_delta_beta1": 4.0,
+        "positive_fraction": 0.6247348789585314,
+        "zero_fraction": 0.046478461200906894,
+        "negative_fraction": 0.3287866598405617
+      },
+      {
+        "course_id": "C_697791",
+        "candidate_count": 17452,
+        "bundle_size": 8,
+        "mean_delta_beta1": -0.737623195049278,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.29520971808388724,
+        "zero_fraction": 0.11081824432729773,
+        "negative_fraction": 0.593972037588815
+      },
+      {
+        "course_id": "C_697797",
+        "candidate_count": 26030,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.3069919323857088,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.15439877064925087,
+        "zero_fraction": 0.4146753745678064,
+        "negative_fraction": 0.43092585478294276
+      },
+      {
+        "course_id": "C_697821",
+        "candidate_count": 19713,
+        "bundle_size": 124,
+        "mean_delta_beta1": 100.68416780804546,
+        "median_delta_beta1": 97.0,
+        "positive_fraction": 1.0,
+        "zero_fraction": 0.0,
+        "negative_fraction": 0.0
+      },
+      {
+        "course_id": "C_697828",
+        "candidate_count": 25025,
+        "bundle_size": 9,
+        "mean_delta_beta1": 0.3562037962037962,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.3143256743256743,
+        "zero_fraction": 0.2663736263736264,
+        "negative_fraction": 0.4193006993006993
+      },
+      {
+        "course_id": "C_707083",
+        "candidate_count": 27975,
+        "bundle_size": 34,
+        "mean_delta_beta1": 3.2777122430741734,
+        "median_delta_beta1": 3.0,
+        "positive_fraction": 0.5840929401251117,
+        "zero_fraction": 0.02484361036639857,
+        "negative_fraction": 0.3910634495084897
+      },
+      {
+        "course_id": "C_707173",
+        "candidate_count": 27954,
+        "bundle_size": 3,
+        "mean_delta_beta1": -0.7659011232739501,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.42473349073477856,
+        "negative_fraction": 0.5752665092652214
+      },
+      {
+        "course_id": "C_707379",
+        "candidate_count": 27970,
+        "bundle_size": 3,
+        "mean_delta_beta1": 0.28737933500178764,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.33854129424383267,
+        "zero_fraction": 0.1880943868430461,
+        "negative_fraction": 0.4733643189131212
+      },
+      {
+        "course_id": "C_734011",
+        "candidate_count": 26094,
+        "bundle_size": 22,
+        "mean_delta_beta1": -1.1133977159500268,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.3982524718326052,
+        "zero_fraction": 0.09596075726220588,
+        "negative_fraction": 0.505786770905189
+      },
+      {
+        "course_id": "C_734023",
+        "candidate_count": 28504,
+        "bundle_size": 16,
+        "mean_delta_beta1": -4.00098231827112,
+        "median_delta_beta1": -5.0,
+        "positive_fraction": 0.03434605669379736,
+        "zero_fraction": 0.20004209935447656,
+        "negative_fraction": 0.7656118439517261
+      },
+      {
+        "course_id": "C_734035",
+        "candidate_count": 27039,
+        "bundle_size": 5,
+        "mean_delta_beta1": -0.5954732053700211,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.06486926291652798,
+        "zero_fraction": 0.48607566847886385,
+        "negative_fraction": 0.44905506860460814
+      },
+      {
+        "course_id": "C_735130",
+        "candidate_count": 28481,
+        "bundle_size": 10,
+        "mean_delta_beta1": -0.4695762087005372,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.35904638179839193,
+        "zero_fraction": 0.05231557880692391,
+        "negative_fraction": 0.5886380393946842
+      },
+      {
+        "course_id": "C_735157",
+        "candidate_count": 23100,
+        "bundle_size": 12,
+        "mean_delta_beta1": -1.9370995670995672,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.006147186147186148,
+        "negative_fraction": 0.9938528138528139
+      },
+      {
+        "course_id": "C_735441",
+        "candidate_count": 28339,
+        "bundle_size": 9,
+        "mean_delta_beta1": -1.1004622604890786,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.3567168919157345,
+        "zero_fraction": 0.15099333074561558,
+        "negative_fraction": 0.4922897773386499
+      },
+      {
+        "course_id": "C_746968",
+        "candidate_count": 28345,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.04180631504674546,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9581936849532545,
+        "negative_fraction": 0.04180631504674546
+      },
+      {
+        "course_id": "C_747024",
+        "candidate_count": 28240,
+        "bundle_size": 12,
+        "mean_delta_beta1": -1.595856940509915,
+        "median_delta_beta1": -2.0,
+        "positive_fraction": 0.3613668555240793,
+        "zero_fraction": 0.04263456090651558,
+        "negative_fraction": 0.595998583569405
+      },
+      {
+        "course_id": "C_769293",
+        "candidate_count": 27964,
+        "bundle_size": 33,
+        "mean_delta_beta1": -4.179266199399228,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.006150765269632385,
+        "zero_fraction": 0.4999284794736089,
+        "negative_fraction": 0.4939207552567587
+      },
+      {
+        "course_id": "C_770738",
+        "candidate_count": 20107,
+        "bundle_size": 33,
+        "mean_delta_beta1": -5.812353906599692,
+        "median_delta_beta1": -4.0,
+        "positive_fraction": 0.00855423484358681,
+        "zero_fraction": 0.30452081364698863,
+        "negative_fraction": 0.6869249515094246
+      },
+      {
+        "course_id": "C_770751",
+        "candidate_count": 27968,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.3301987986270023,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.05037900457665904,
+        "zero_fraction": 0.5592105263157895,
+        "negative_fraction": 0.3904104691075515
+      },
+      {
+        "course_id": "C_784172",
+        "candidate_count": 27030,
+        "bundle_size": 5,
+        "mean_delta_beta1": -0.8916389197188309,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.007362190159082501,
+        "zero_fraction": 0.41309655937846834,
+        "negative_fraction": 0.5795412504624491
+      },
+      {
+        "course_id": "C_830439",
+        "candidate_count": 28536,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.585085506027474,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.02586206896551724,
+        "zero_fraction": 0.27708858985141577,
+        "negative_fraction": 0.697049341183067
+      },
+      {
+        "course_id": "C_830568",
+        "candidate_count": 28533,
+        "bundle_size": 1,
+        "mean_delta_beta1": -0.041530859005362214,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0,
+        "zero_fraction": 0.9584691409946378,
+        "negative_fraction": 0.041530859005362214
+      },
+      {
+        "course_id": "C_830569",
+        "candidate_count": 28531,
+        "bundle_size": 11,
+        "mean_delta_beta1": -1.7881952963443273,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.08226139988083138,
+        "zero_fraction": 0.26020819459535244,
+        "negative_fraction": 0.6575304055238163
+      },
+      {
+        "course_id": "C_830571",
+        "candidate_count": 28535,
+        "bundle_size": 10,
+        "mean_delta_beta1": -1.2481864377080778,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.11158226739092343,
+        "zero_fraction": 0.3278079551428071,
+        "negative_fraction": 0.5606097774662695
+      },
+      {
+        "course_id": "C_837721",
+        "candidate_count": 28588,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.1835385476423674,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.0832517140058766,
+        "zero_fraction": 0.38977892822163146,
+        "negative_fraction": 0.526969357772492
+      },
+      {
+        "course_id": "C_854866",
+        "candidate_count": 24527,
+        "bundle_size": 21,
+        "mean_delta_beta1": -2.2053655155542873,
+        "median_delta_beta1": -3.0,
+        "positive_fraction": 0.360989929465487,
+        "zero_fraction": 0.04236147918620296,
+        "negative_fraction": 0.59664859134831
+      },
+      {
+        "course_id": "C_854870",
+        "candidate_count": 27430,
+        "bundle_size": 7,
+        "mean_delta_beta1": -1.2335034633612834,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.08676631425446592,
+        "zero_fraction": 0.36401749908858916,
+        "negative_fraction": 0.5492161866569449
+      },
+      {
+        "course_id": "C_854871",
+        "candidate_count": 26910,
+        "bundle_size": 2,
+        "mean_delta_beta1": -0.8701597918989223,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.026161278335191378,
+        "zero_fraction": 0.4177629134150873,
+        "negative_fraction": 0.5560758082497212
+      },
+      {
+        "course_id": "C_862634",
+        "candidate_count": 28587,
+        "bundle_size": 33,
+        "mean_delta_beta1": -4.088186938118725,
+        "median_delta_beta1": 0.0,
+        "positive_fraction": 0.0060167208871165214,
+        "zero_fraction": 0.5108265995032707,
+        "negative_fraction": 0.4831566796096128
+      },
+      {
+        "course_id": "C_883345",
+        "candidate_count": 16465,
+        "bundle_size": 33,
+        "mean_delta_beta1": -7.098026116003644,
+        "median_delta_beta1": -7.0,
+        "positive_fraction": 0.010446401457637413,
+        "zero_fraction": 0.15068326753720013,
+        "negative_fraction": 0.8388703310051625
+      },
+      {
+        "course_id": "C_928746",
+        "candidate_count": 28587,
+        "bundle_size": 6,
+        "mean_delta_beta1": -1.1743799629202085,
+        "median_delta_beta1": -1.0,
+        "positive_fraction": 0.040752789729597366,
+        "zero_fraction": 0.30639801308286985,
+        "negative_fraction": 0.6528491971875328
+      }
+    ]
+  },
+  "signal": {
+    "candidate_delta_mean": 1.4216150043828224,
+    "candidate_delta_median": 0.0,
+    "candidate_abs_delta_mean": 4.525209668968743
+  },
+  "selection_performed": false,
+  "new_reranker_evaluated": false,
+  "development_test_evaluated": false
+}

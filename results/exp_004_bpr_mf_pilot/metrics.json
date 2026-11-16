@@ -1,0 +1,88 @@
+{
+  "experiment_id": "exp_004_bpr_mf_pilot",
+  "status": "completed",
+  "phase": "exploratory",
+  "parent_experiment": "exp_003_markov_baseline",
+  "code_commit": "94d018e01b75eb049bb5fe31428d6412ebe9db38",
+  "seed": 42,
+  "deterministic_cpu": true,
+  "torch_version": "2.14.1+cpu",
+  "data": {
+    "sequences_path": "data\\processed\\mooccube2x_cs\\sequences.jsonl",
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_vocab_path": "data\\processed\\mooccube2x_cs\\course_vocab.json",
+    "course_vocab_sha256": "6cbe2f9d7cfe8759d3b5430080677349891f72303755498765579eabf3b72ee7",
+    "candidate_courses": 117
+  },
+  "split": {
+    "protocol": "temporal_leave_two_out",
+    "min_sequence_length": 5,
+    "users": 28589,
+    "train_events": 146061
+  },
+  "ranking_policy": "full_catalog_exclude_history",
+  "model": {
+    "type": "bpr_matrix_factorization",
+    "embedding_dim": 32,
+    "learning_rate": 0.003,
+    "l2": 1e-06,
+    "batch_size": 4096,
+    "max_epochs": 60,
+    "eval_every": 2,
+    "patience": 6,
+    "selection_metric": "ndcg@10",
+    "test_representation_policy": "static_user_embedding_from_training_prefix; validation_item_masked_as_observed_for_test_candidates",
+    "negative_sampling_policy": "uniform_from_items_not_in_training_prefix; held-out future items are not excluded"
+  },
+  "training": {
+    "best_epoch": 24,
+    "epochs_ran": 36,
+    "selection_metric": "ndcg@10",
+    "best_validation_metric": 0.3249259499357007,
+    "validation_target_negative_samples": 48773,
+    "test_target_negative_samples": 49031,
+    "history": [
+      {"epoch": 1, "loss": 0.6566121429204941, "ndcg@10": 0.28971846935448126},
+      {"epoch": 2, "loss": 0.5138708410991563, "ndcg@10": 0.31346872365617423},
+      {"epoch": 4, "loss": 0.2549950389398469, "ndcg@10": 0.3161813919401707},
+      {"epoch": 6, "loss": 0.20514705114894444, "ndcg@10": 0.31821006008148994},
+      {"epoch": 8, "loss": 0.17804137451781166, "ndcg@10": 0.3207888017479765},
+      {"epoch": 10, "loss": 0.15609194214145342, "ndcg@10": 0.3216435165438577},
+      {"epoch": 12, "loss": 0.13501525090800393, "ndcg@10": 0.32167881279294996},
+      {"epoch": 14, "loss": 0.11742262128326628, "ndcg@10": 0.32063902279222306},
+      {"epoch": 16, "loss": 0.10279477594627275, "ndcg@10": 0.3213992289502715},
+      {"epoch": 18, "loss": 0.0890943542536762, "ndcg@10": 0.32210706540621514},
+      {"epoch": 20, "loss": 0.08026561782591873, "ndcg@10": 0.32332838593168134},
+      {"epoch": 22, "loss": 0.07133860161734952, "ndcg@10": 0.3235989716826594},
+      {"epoch": 24, "loss": 0.062148753036227494, "ndcg@10": 0.3249259499357007},
+      {"epoch": 26, "loss": 0.0556076585004727, "ndcg@10": 0.32260329641501867},
+      {"epoch": 28, "loss": 0.049596111497117415, "ndcg@10": 0.3236046083712556},
+      {"epoch": 30, "loss": 0.045630362505714096, "ndcg@10": 0.3246854807300408},
+      {"epoch": 32, "loss": 0.0405506512357129, "ndcg@10": 0.32461429291476457},
+      {"epoch": 34, "loss": 0.037353725689980716, "ndcg@10": 0.32358320672459473},
+      {"epoch": 36, "loss": 0.03288289444107148, "ndcg@10": 0.3240428259986566}
+    ]
+  },
+  "validation": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.2664400529492075,
+    "recall@5": 0.39843995942495364,
+    "ndcg@5": 0.2642927105932675,
+    "recall@10": 0.5867291615656371,
+    "ndcg@10": 0.3249259499357007,
+    "recall@20": 0.7993633915142188,
+    "ndcg@20": 0.3786530538093835
+  },
+  "test": {
+    "users": 28589,
+    "missing_targets": 0,
+    "mrr": 0.2458659165706226,
+    "recall@5": 0.36111791248382247,
+    "ndcg@5": 0.23895929739201377,
+    "recall@10": 0.5445451047605723,
+    "ndcg@10": 0.2979359901448854,
+    "recall@20": 0.7611668823673441,
+    "ndcg@20": 0.3527655321780029
+  }
+}

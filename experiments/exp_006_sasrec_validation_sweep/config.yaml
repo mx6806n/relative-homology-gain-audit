@@ -1,0 +1,64 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_006_sasrec_validation_sweep",
+  "min_sequence_length": 5,
+  "cutoffs": [5, 10, 20],
+  "seed": 42,
+  "max_seq_len": 50,
+  "weight_decay": 0.000001,
+  "batch_size": 512,
+  "eval_batch_size": 1024,
+  "max_epochs": 40,
+  "patience": 5,
+  "selection_metric": "ndcg@10",
+  "candidates": [
+    {
+      "id": "pilot_64x2_d20_lr1e3",
+      "embedding_dim": 64,
+      "num_heads": 2,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "learning_rate": 0.001
+    },
+    {
+      "id": "small_32x1_d20_lr1e3",
+      "embedding_dim": 32,
+      "num_heads": 2,
+      "num_layers": 1,
+      "dropout": 0.2,
+      "learning_rate": 0.001
+    },
+    {
+      "id": "shallow_64x1_d20_lr1e3",
+      "embedding_dim": 64,
+      "num_heads": 2,
+      "num_layers": 1,
+      "dropout": 0.2,
+      "learning_rate": 0.001
+    },
+    {
+      "id": "lowdrop_64x2_d10_lr1e3",
+      "embedding_dim": 64,
+      "num_heads": 2,
+      "num_layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001
+    },
+    {
+      "id": "slowlr_64x2_d20_lr5e4",
+      "embedding_dim": 64,
+      "num_heads": 2,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "learning_rate": 0.0005
+    },
+    {
+      "id": "wide_128x2_d20_lr1e3",
+      "embedding_dim": 128,
+      "num_heads": 4,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "learning_rate": 0.001
+    }
+  ]
+}

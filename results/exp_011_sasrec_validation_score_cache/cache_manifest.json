@@ -1,0 +1,67 @@
+{
+  "experiment_id": "exp_011_sasrec_validation_score_cache",
+  "cache_file": "validation_sasrec_scores.npz",
+  "cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+  "topology_cache": {
+    "path": "results\\exp_010_validation_topology_cache\\validation_topology_cache.npz",
+    "sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33"
+  },
+  "data_hashes": {
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_vocab_sha256": "6cbe2f9d7cfe8759d3b5430080677349891f72303755498765579eabf3b72ee7"
+  },
+  "model": {
+    "selected_candidate_id": "wide_128x2_d20_lr1e3",
+    "seed": 42,
+    "max_seq_len": 50,
+    "embedding_dim": 128,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-06,
+    "batch_size": 512,
+    "eval_batch_size": 1024,
+    "max_epochs": 40,
+    "patience": 5,
+    "selection_metric": "ndcg@10",
+    "best_epoch": 20
+  },
+  "arrays": {
+    "logits": {
+      "dtype": "float32",
+      "shape": [
+        28589,
+        117
+      ]
+    },
+    "validation_target_indices": {
+      "dtype": "int16",
+      "shape": [
+        28589
+      ]
+    },
+    "user_ids": {
+      "dtype": "<U10",
+      "shape": [
+        28589
+      ]
+    },
+    "course_ids": {
+      "dtype": "<U9",
+      "shape": [
+        117
+      ]
+    }
+  },
+  "alignment": {
+    "users": 28589,
+    "courses": 117,
+    "seen_entries_from_topology_mask": 146061,
+    "candidate_entries": 3198852,
+    "topology_alignment_passed": true,
+    "direct_vs_cached_metrics_passed": true,
+    "exp006_reproduction_passed": true
+  },
+  "development_test_evaluated": false
+}

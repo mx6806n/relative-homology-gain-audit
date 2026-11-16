@@ -1,0 +1,31 @@
+[project]
+name = "relative-homology-gain-audit"
+version = "1.0.0"
+description = "Relative first homology gains on prerequisite flag complexes and a comparability audit for course ranking."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "networkx>=3.2,<4",
+    "numpy>=1.26,<2",
+    "openpyxl>=3.1,<4",
+    "pandas>=2.1,<3",
+    "pyflagser==0.4.7",
+    "python-dotenv>=1.0,<2",
+    "scikit-learn>=1.4,<2",
+    "scipy>=1.11,<2",
+    "torch>=2.2,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

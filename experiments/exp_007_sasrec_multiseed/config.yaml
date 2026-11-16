@@ -1,0 +1,21 @@
+{
+  "data_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_007_sasrec_multiseed",
+  "min_sequence_length": 5,
+  "cutoffs": [5, 10, 20],
+  "seeds": [101, 202, 303, 404, 505],
+  "model": {
+    "max_seq_len": 50,
+    "embedding_dim": 128,
+    "num_heads": 4,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.000001,
+    "batch_size": 512,
+    "eval_batch_size": 1024,
+    "max_epochs": 40,
+    "patience": 5,
+    "selection_metric": "ndcg@10"
+  }
+}

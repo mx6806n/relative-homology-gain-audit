@@ -1,0 +1,13 @@
+{
+  "source_experiment": "exp_016_secondary_domain_feasibility",
+  "selected_domain": null,
+  "selection_basis": "feasibility_only",
+  "thresholds": {
+    "min_users_ge5": 2000,
+    "min_unique_courses": 30,
+    "min_concept_coverage_percent": 50.0
+  },
+  "selection_rule": "among feasible domains: maximize users_ge5, then unique_mapped_courses_used, then concept coverage; alphabetical domain tie-break",
+  "recommendation_metrics_evaluated": false,
+  "topology_target_signal_evaluated": false
+}

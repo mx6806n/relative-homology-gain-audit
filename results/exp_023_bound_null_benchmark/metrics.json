@@ -1,0 +1,176 @@
+{
+  "experiment_id": "exp_023_bound_null_benchmark",
+  "status": "completed",
+  "phase": "no_topology_null_benchmark",
+  "evidence_scope": "target_independent",
+  "predeclaration": "docs/analysis_plan.md D-076",
+  "config": {
+    "experiment_id": "exp_023_bound_null_benchmark",
+    "output_dir": "results/exp_023_bound_null_benchmark",
+    "processed_cs_dir": "data/processed/mooccube2x_cs",
+    "min_sequence_length": 5,
+    "evaluator_cache_size": 524288,
+    "exp018_metrics": "results/exp_018_relative_chain_decomposition/metrics.json",
+    "exp021_metrics": "results/exp_021_doris_v3_semester_bundle_mechanism/metrics.json",
+    "bootstrap_replicates": 1000,
+    "random_bundle_replicates": 5,
+    "excess_margin": 0.05,
+    "seed": 20261012
+  },
+  "inputs": {
+    "exp018_metrics_sha256": "9eb21e659ea3ebe80e3a2b8cb34ab4684a1cf76e959390e10b3b2621713bcfc3",
+    "exp021_metrics_sha256": "b5f75bf66323e25d3715ab9ff1193910a9e998cf6f4b7f5e03b1cb384f496da9",
+    "doris_edges_sha256": "01d2db584e3ac62e9a2f416e08e7750a010e513acfe1f2e5bb0878ccf30b5eaa",
+    "doris_s2_sha256": "8fd24c05878cc184921f8749948c088df1d71f70f3518612ba5710e8489f3360"
+  },
+  "nulls": {
+    "N1": "g* ~ Uniform{-m..q} (bound only)",
+    "N2": "g* = -Binomial(m, p), p fitted to observed zero fraction",
+    "N3": "g* = q - m (one-dimensional circuit-rank term)",
+    "N4": "same-size random bundle in the same graph (DORIS)"
+  },
+  "mooccube2x": {
+    "cs": {
+      "users": 28589,
+      "courses": 117,
+      "candidate_states": 3198852,
+      "reproduces_exp_018": true,
+      "bound_violations": 0,
+      "pooled_spearman_abs_vs_m": {
+        "observed": 0.8190284183456519,
+        "n1_bound_uniform": 0.8133146233710266,
+        "n3_one_dimensional_q_minus_m": 0.8548617210822537
+      },
+      "per_user_median_spearman_abs_vs_m": {
+        "observed": 0.8194830001972295,
+        "n1_bound_uniform": 0.8131786851369434,
+        "n3_one_dimensional_q_minus_m": 0.8523047121525569
+      },
+      "primary_per_user_excess_over_n1": {
+        "n": 28580,
+        "mean": 0.00472091642222091,
+        "ci95": [
+          0.0036343353597676586,
+          0.005789649197756357
+        ],
+        "replicates": 1000,
+        "seed": 20261013
+      },
+      "classification": "BOUND_DOMINATED",
+      "fraction_g_equals_q_minus_m": 0.7042095101617706,
+      "elapsed_seconds": 198.23672079999233
+    },
+    "math": {
+      "users": 3516,
+      "courses": 26,
+      "candidate_states": 75491,
+      "reproduces_exp_018": true,
+      "bound_violations": 0,
+      "pooled_spearman_abs_vs_m": {
+        "observed": 0.7058959968481158,
+        "n1_bound_uniform": 0.814123112521685,
+        "n3_one_dimensional_q_minus_m": 0.725066791649757
+      },
+      "per_user_median_spearman_abs_vs_m": {
+        "observed": 0.750997364962389,
+        "n1_bound_uniform": 0.8084110507451483,
+        "n3_one_dimensional_q_minus_m": 0.7742447800755251
+      },
+      "primary_per_user_excess_over_n1": {
+        "n": 3512,
+        "mean": -0.08280175057995302,
+        "ci95": [
+          -0.0885211859663399,
+          -0.07718588907267367
+        ],
+        "replicates": 1000,
+        "seed": 20261113
+      },
+      "classification": "BOUND_DOMINATED",
+      "fraction_g_equals_q_minus_m": 0.5402233378813368,
+      "elapsed_seconds": 6.0059932000003755
+    },
+    "psy": {
+      "users": 1758,
+      "courses": 26,
+      "candidate_states": 38105,
+      "reproduces_exp_018": true,
+      "bound_violations": 0,
+      "pooled_spearman_abs_vs_m": {
+        "observed": 0.6741382201120705,
+        "n1_bound_uniform": 0.7530593008866339,
+        "n3_one_dimensional_q_minus_m": 0.6702388843428367
+      },
+      "per_user_median_spearman_abs_vs_m": {
+        "observed": 0.7360474337780458,
+        "n1_bound_uniform": 0.777034112533415,
+        "n3_one_dimensional_q_minus_m": 0.7621171742609006
+      },
+      "primary_per_user_excess_over_n1": {
+        "n": 1757,
+        "mean": -0.0417275068236119,
+        "ci95": [
+          -0.04867294232504189,
+          -0.03487086508386335
+        ],
+        "replicates": 1000,
+        "seed": 20261213
+      },
+      "classification": "BOUND_DOMINATED",
+      "fraction_g_equals_q_minus_m": 0.2645322136202598,
+      "elapsed_seconds": 4.275594599981559
+    }
+  },
+  "doris": {
+    "states": 12327,
+    "students": 3919,
+    "reproduces_exp_021": true,
+    "observed_spearman_abs_vs_m": 0.5356934415704231,
+    "excess_over_n1": {
+      "observed_rho": 0.5356934415704231,
+      "null_rho": 0.480247407402427,
+      "difference": 0.055446034167996094,
+      "ci95": [
+        0.03473720027773359,
+        0.07573893009903598
+      ],
+      "replicates_defined": 1000,
+      "seed": 20262013,
+      "clusters": 3919
+    },
+    "excess_over_n2": {
+      "observed_rho": 0.5356934415704231,
+      "null_rho": 0.4826250244090918,
+      "difference": 0.053068417161331316,
+      "ci95": [
+        0.03315060689096471,
+        0.07328296872534303
+      ],
+      "replicates_defined": 1000,
+      "seed": 20262014,
+      "clusters": 3919
+    },
+    "classification_n1": "BOUND_DOMINATED",
+    "classification_n2": "BOUND_DOMINATED",
+    "classification": "BOUND_DOMINATED",
+    "n2_fitted_vertex_probability": 0.36405172869281394,
+    "observed_zero_fraction": 0.4276790784456883,
+    "n3_one_dimensional_spearman": 0.6321331904498759,
+    "n4_random_bundle": {
+      "replicates": 5,
+      "spearman_values": [
+        0.6279949176211909,
+        0.6237893499479726,
+        0.6324460947590569,
+        0.6214445106706464,
+        0.6276404995631656
+      ],
+      "mean": 0.6266630745124064
+    },
+    "fraction_g_equals_q_minus_m": 0.4877099050863957,
+    "elapsed_seconds": 43.836262200027704
+  },
+  "recommendation_metrics_evaluated": false,
+  "selection_performed": false,
+  "new_score_evaluated": false
+}

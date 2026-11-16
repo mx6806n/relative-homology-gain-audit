@@ -1,0 +1,7 @@
+{
+  "experiment_id": "exp_021_doris_v3_semester_bundle_mechanism",
+  "output_dir": "results/exp_021_doris_v3_semester_bundle_mechanism",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20261009,
+  "evaluator_cache_size": 131072
+}

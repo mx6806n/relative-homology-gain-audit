@@ -1,0 +1,87 @@
+{
+  "experiment_id": "exp_016_secondary_domain_feasibility",
+  "status": "completed",
+  "phase": "fresh_setting_selection",
+  "evidence_scope": "feasibility_only",
+  "domains": [
+    {
+      "domain": "math",
+      "graph_nodes": 294,
+      "graph_edges": 761,
+      "graph_is_dag": true,
+      "prerequisite_total_records": 331202,
+      "prerequisite_positive_records": 761,
+      "prerequisite_malformed_records": 0,
+      "users_ge1": 108772,
+      "users_ge2": 28446,
+      "users_ge3": 11392,
+      "users_ge5": 3516,
+      "users_ge10": 270,
+      "mapped_enrollment_events": 163470,
+      "aligned_next_course_transitions": 54698,
+      "mapped_courses_available": 27,
+      "unique_mapped_courses_used": 27,
+      "dag_concepts": 294,
+      "dag_concepts_mapped_by_courses": 168,
+      "dag_concepts_reached_by_users": 168,
+      "dag_concept_user_coverage_percent": 57.142857142857146,
+      "terminal_target_coverage_percent": 1.637529448667552,
+      "aligned_sequence_length_percentiles": {
+        "p25": 1.0,
+        "p50": 1.0,
+        "p75": 2.0,
+        "p90": 3.0,
+        "p95": 4.0
+      },
+      "feasible": false
+    },
+    {
+      "domain": "psy",
+      "graph_nodes": 377,
+      "graph_edges": 831,
+      "graph_is_dag": true,
+      "prerequisite_total_records": 757771,
+      "prerequisite_positive_records": 831,
+      "prerequisite_malformed_records": 0,
+      "users_ge1": 165563,
+      "users_ge2": 34026,
+      "users_ge3": 9259,
+      "users_ge5": 1758,
+      "users_ge10": 106,
+      "mapped_enrollment_events": 216587,
+      "aligned_next_course_transitions": 51024,
+      "mapped_courses_available": 28,
+      "unique_mapped_courses_used": 28,
+      "dag_concepts": 377,
+      "dag_concepts_mapped_by_courses": 311,
+      "dag_concepts_reached_by_users": 311,
+      "dag_concept_user_coverage_percent": 82.49336870026525,
+      "terminal_target_coverage_percent": 1.9663868069969366,
+      "aligned_sequence_length_percentiles": {
+        "p25": 1.0,
+        "p50": 1.0,
+        "p75": 1.0,
+        "p90": 2.0,
+        "p95": 3.0
+      },
+      "feasible": false
+    }
+  ],
+  "feasibility_thresholds": {
+    "min_users_ge5": 2000,
+    "min_unique_courses": 30,
+    "min_concept_coverage_percent": 50.0
+  },
+  "selection_rule": "among feasible domains: maximize users_ge5, then unique_mapped_courses_used, then concept coverage; alphabetical domain tie-break",
+  "selected_domain": null,
+  "raw_data_hashes": {
+    "user_json_sha256": "614c5f2753cc23f344bd51968f052564cfbe61694cd3eb7bccb0756a529f61c9",
+    "concept_json_sha256": "91492ad6bb7ba1cb152acc28d11cb961005f0e8ff64e95fc3cf5c0c5385d4cf4",
+    "concept_course_sha256": "236b8bfaa00b1f8d0476c276182f7c9602004b89c95f80e3d1f1b9a4368687fd",
+    "math_prerequisite_sha256": "4cb498ec0b42d729f93be01cdbb7890703427f30d5444b267ef7d9687930194c",
+    "psy_prerequisite_sha256": "30728293998ebab657d71258c63d2e07edf5df5ec1b1358746020f04f35fa4ca"
+  },
+  "recommendation_metrics_evaluated": false,
+  "topology_target_signal_evaluated": false,
+  "development_test_evaluated": false
+}

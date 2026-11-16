@@ -1,0 +1,171 @@
+{
+  "experiment_id": "exp_017_cross_domain_topology_mechanism",
+  "status": "completed",
+  "phase": "mechanism_replication",
+  "evidence_scope": "target_independent",
+  "domains": {
+    "math": {
+      "users": 3516,
+      "courses": 26,
+      "candidate_states": 75491,
+      "graph_nodes": 294,
+      "graph_edges": 761,
+      "directed_triangles": 209,
+      "delta_range": [
+        -25,
+        41
+      ],
+      "positive_fraction": 0.4615914479871773,
+      "zero_fraction": 0.27481421626419045,
+      "negative_fraction": 0.2635943357486323,
+      "correlations": {
+        "delta_vs_bundle_size": {
+          "global_spearman": 0.27917482644055164,
+          "per_user_mean": 0.32090227400033267,
+          "per_user_median": 0.34393052600188184,
+          "per_user_defined": 3513
+        },
+        "abs_delta_vs_bundle_size": {
+          "global_spearman": 0.4495037221490359,
+          "per_user_mean": 0.4544299636928873,
+          "per_user_median": 0.45923097784482714,
+          "per_user_defined": 3513
+        },
+        "delta_vs_new_concept_count": {
+          "global_spearman": 0.2928892625077245,
+          "per_user_mean": 0.4227596734191844,
+          "per_user_median": 0.4756614873210507,
+          "per_user_defined": 3513
+        },
+        "abs_delta_vs_new_concept_count": {
+          "global_spearman": 0.7058959968481158,
+          "per_user_mean": 0.7116629727377488,
+          "per_user_median": 0.750997364962389,
+          "per_user_defined": 3513
+        },
+        "delta_vs_unmet_direct_count": {
+          "global_spearman": 0.18976125292361412,
+          "per_user_mean": 0.22867149966230885,
+          "per_user_median": 0.24580930823548994,
+          "per_user_defined": 3513
+        },
+        "abs_delta_vs_unmet_direct_count": {
+          "global_spearman": 0.3873231992610751,
+          "per_user_mean": 0.3501619423127904,
+          "per_user_median": 0.3464462320230408,
+          "per_user_defined": 3513
+        },
+        "delta_vs_unmet_ancestor_count": {
+          "global_spearman": -0.04093644739761386,
+          "per_user_mean": 0.09500541611170366,
+          "per_user_median": 0.10363620730919901,
+          "per_user_defined": 3513
+        },
+        "abs_delta_vs_unmet_ancestor_count": {
+          "global_spearman": 0.15073367593131007,
+          "per_user_mean": 0.07316679812713946,
+          "per_user_median": 0.07286331950673909,
+          "per_user_defined": 3513
+        }
+      },
+      "linear_structural_count_r2": 0.16962191588025632,
+      "elapsed_topology_scoring_seconds": 3.8553095999996003,
+      "evaluator_cache": {
+        "hits": 142963,
+        "misses": 8019,
+        "currsize": 8019,
+        "maxsize": 131072,
+        "hit_rate": 0.9468877084685592
+      },
+      "target_performance_inspected": false,
+      "prerequisite_positive_records": 761
+    },
+    "psy": {
+      "users": 1758,
+      "courses": 26,
+      "candidate_states": 38105,
+      "graph_nodes": 377,
+      "graph_edges": 831,
+      "directed_triangles": 260,
+      "delta_range": [
+        -42,
+        76
+      ],
+      "positive_fraction": 0.5796352184752657,
+      "zero_fraction": 0.169006692035166,
+      "negative_fraction": 0.2513580894895683,
+      "correlations": {
+        "delta_vs_bundle_size": {
+          "global_spearman": 0.44291313578668434,
+          "per_user_mean": 0.45712736864551984,
+          "per_user_median": 0.48196778698636616,
+          "per_user_defined": 1757
+        },
+        "abs_delta_vs_bundle_size": {
+          "global_spearman": 0.5019316735754787,
+          "per_user_mean": 0.49688290925916884,
+          "per_user_median": 0.4993945575675025,
+          "per_user_defined": 1757
+        },
+        "delta_vs_new_concept_count": {
+          "global_spearman": 0.36911549898601914,
+          "per_user_mean": 0.5474900573010716,
+          "per_user_median": 0.6197975609048398,
+          "per_user_defined": 1757
+        },
+        "abs_delta_vs_new_concept_count": {
+          "global_spearman": 0.6741382201120705,
+          "per_user_mean": 0.7199925981160638,
+          "per_user_median": 0.7360474337780458,
+          "per_user_defined": 1757
+        },
+        "delta_vs_unmet_direct_count": {
+          "global_spearman": 0.37431718338815745,
+          "per_user_mean": 0.45646097051335494,
+          "per_user_median": 0.48675707817537917,
+          "per_user_defined": 1757
+        },
+        "abs_delta_vs_unmet_direct_count": {
+          "global_spearman": 0.5895424329456173,
+          "per_user_mean": 0.589535982985557,
+          "per_user_median": 0.6317245371665816,
+          "per_user_defined": 1757
+        },
+        "delta_vs_unmet_ancestor_count": {
+          "global_spearman": 0.22111347198892423,
+          "per_user_mean": 0.33927337574317357,
+          "per_user_median": 0.35212203735572234,
+          "per_user_defined": 1757
+        },
+        "abs_delta_vs_unmet_ancestor_count": {
+          "global_spearman": 0.4952351941104563,
+          "per_user_mean": 0.5020338941149605,
+          "per_user_median": 0.5350088152685922,
+          "per_user_defined": 1757
+        }
+      },
+      "linear_structural_count_r2": 0.4208944092069822,
+      "elapsed_topology_scoring_seconds": 3.3825622999993357,
+      "evaluator_cache": {
+        "hits": 68812,
+        "misses": 7398,
+        "currsize": 7398,
+        "maxsize": 131072,
+        "hit_rate": 0.9029261251804225
+      },
+      "target_performance_inspected": false,
+      "prerequisite_positive_records": 831
+    }
+  },
+  "cs_reference": {
+    "abs_delta_vs_new_concept_spearman": 0.8190284183456519,
+    "abs_delta_vs_bundle_size_spearman": 0.5609328111363182,
+    "structural_count_r2": 0.738115
+  },
+  "primary_replication_quantity": "Spearman(|Delta beta_1|, new_concept_count)",
+  "interpretation_rule": "No recommendation or target performance is evaluated. Consistency is assessed descriptively across domains.",
+  "selection_performed": false,
+  "recommendation_metrics_evaluated": false,
+  "topology_target_signal_evaluated": false,
+  "development_test_evaluated": false
+}

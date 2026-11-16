@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived data, please cite the article below."
+title: "relative-homology-gain-audit"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Moumane
+    given-names: Abdelkader
+    affiliation: "Faculty of Sciences and Technology, University Sultan Moulay Slimane, Beni Mellal, Morocco"
+  - family-names: Es-Sabery
+    given-names: Brahim
+    affiliation: "Faculty of Sciences and Technology, University Sultan Moulay Slimane, Beni Mellal, Morocco"
+  - family-names: Oufqir
+    given-names: Soukaina
+    affiliation: "Faculty of Sciences and Technology, University Sultan Moulay Slimane, Beni Mellal, Morocco"
+  - family-names: Baslam
+    given-names: Mohamed
+    affiliation: "Faculty of Sciences and Technology, University Sultan Moulay Slimane, Beni Mellal, Morocco"
+  - family-names: Ouhda
+    given-names: Mohamed
+    affiliation: "Faculty of Sciences and Technology, University Sultan Moulay Slimane, Beni Mellal, Morocco"
+preferred-citation:
+  type: article
+  title: "Candidate size confounds raw relative homology gains for course ranking on prerequisite graphs"
+  authors:
+    - family-names: Moumane
+      given-names: Abdelkader
+    - family-names: Es-Sabery
+      given-names: Brahim
+    - family-names: Oufqir
+      given-names: Soukaina
+    - family-names: Baslam
+      given-names: Mohamed
+    - family-names: Ouhda
+      given-names: Mohamed
+  year: 2026

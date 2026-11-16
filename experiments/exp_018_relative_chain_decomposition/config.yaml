@@ -1,0 +1,6 @@
+{
+  "processed_cs_dir": "data/processed/mooccube2x_cs",
+  "output_dir": "results/exp_018_relative_chain_decomposition",
+  "min_sequence_length": 5,
+  "evaluator_cache_size": 524288
+}

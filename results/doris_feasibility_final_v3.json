@@ -1,0 +1,23 @@
+{
+  "status": "feasible",
+  "audit_version": 3,
+  "nonmanual_gates_pass": true,
+  "manual_review": {
+    "sample_size": 100,
+    "supported_edges": 94,
+    "unsupported_edges": 6,
+    "precision": 0.94,
+    "threshold": 0.9,
+    "gate_pass": true,
+    "wilson_95_ci": [
+      0.8752318455410406,
+      0.9722138760368118
+    ],
+    "ci_is_descriptive_not_gate": true,
+    "review_is_disjoint_from_v2_sample": true
+  },
+  "final_feasibility_pass": true,
+  "decision_rule": "final_feasibility_pass = all unchanged non-manual gates pass AND disjoint manual holdout precision >= unchanged 0.90 threshold",
+  "source_audit": "results\\doris_feasibility_audit_v3.json",
+  "source_manual_review": "results\\doris_prerequisite_manual_holdout_v3.csv"
+}

@@ -1,0 +1,171 @@
+{
+  "experiment_id": "exp_022_size_stratified_diagnostic",
+  "status": "completed",
+  "phase": "size_stratified_mechanism_diagnostic",
+  "evidence_scope": "validation_only",
+  "predeclaration": "docs/analysis_plan.md D-074",
+  "inputs": {
+    "users": 28589,
+    "courses": 117,
+    "candidate_entries": 3198852,
+    "topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+    "sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+    "sequences_sha256": "cc8a55840023f06434f4a96662361f50960d43255bc2678e937dbdca8231e185",
+    "course_to_concepts_sha256": "42e6429b1a93147154c6d0a46d24e5affa0266df31fb7f39145a2a5ae6ab3f67",
+    "prerequisite_edges_sha256": "e8267fc646a5bea5df681afc16ee63a115709771ed3114e2c2832d111091d0f6"
+  },
+  "config": {
+    "data_dir": "data/processed/mooccube2x_cs",
+    "topology_cache_path": "results/exp_010_validation_topology_cache/validation_topology_cache.npz",
+    "sasrec_cache_path": "results/exp_011_sasrec_validation_score_cache/validation_sasrec_scores.npz",
+    "expected_topology_cache_sha256": "17b03bca269e219a52037e48c42e9614eebcfd71420c00de1023a44823f43b33",
+    "expected_sasrec_cache_sha256": "a452e07ccd951b446f1ad145ddb80ba84d8678044a03fbe792a2103b355cf441",
+    "output_dir": "results/exp_022_size_stratified_diagnostic",
+    "min_sequence_length": 5,
+    "m_bin_lower_edges": [
+      0,
+      1,
+      3,
+      6,
+      11,
+      21
+    ],
+    "min_meaningful_auc": 0.55,
+    "top_k": 10,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20261011
+  },
+  "auc_definition": "per-user P(target outranks a competitor), ties count 0.5, target excluded; chance = 0.5; mean over users with >=1 competitor; user-level percentile bootstrap",
+  "exact_checks": {
+    "bound_lower_violations": 0,
+    "bound_upper_violations": 0
+  },
+  "auc": {
+    "delta_unstratified": {
+      "n": 28589,
+      "mean": 0.530076250993234,
+      "ci95": [
+        0.5262275861241601,
+        0.533649380279113
+      ],
+      "replicates": 1000,
+      "seed": 20261011
+    },
+    "delta_within_exact_m": {
+      "n": 26237,
+      "mean": 0.49823062257079814,
+      "ci95": [
+        0.4955578471913427,
+        0.5010456704654508
+      ],
+      "replicates": 1000,
+      "seed": 20261012
+    },
+    "delta_within_m_bins": {
+      "n": 28563,
+      "mean": 0.5139611063612579,
+      "ci95": [
+        0.5110076580412609,
+        0.5171467328751906
+      ],
+      "replicates": 1000,
+      "seed": 20261013
+    },
+    "delta_within_exact_m_and_q": {
+      "n": 23588,
+      "mean": 0.49938341688568977,
+      "ci95": [
+        0.4980018798686277,
+        0.500763880248793
+      ],
+      "replicates": 1000,
+      "seed": 20261014
+    },
+    "m_unstratified": {
+      "n": 28589,
+      "mean": 0.5867450110206572,
+      "ci95": [
+        0.5833180391776721,
+        0.590091292106022
+      ],
+      "replicates": 1000,
+      "seed": 20261015
+    },
+    "sasrec_unstratified": {
+      "n": 28589,
+      "mean": 0.9232203968912239,
+      "ci95": [
+        0.9220652799967096,
+        0.9243379638125141
+      ],
+      "replicates": 1000,
+      "seed": 20261016
+    },
+    "sasrec_within_exact_m": {
+      "n": 26237,
+      "mean": 0.9397520200789483,
+      "ci95": [
+        0.9382194153166592,
+        0.9413448188404342
+      ],
+      "replicates": 1000,
+      "seed": 20261017
+    }
+  },
+  "primary": {
+    "estimand": "delta_within_exact_m",
+    "result": {
+      "n": 26237,
+      "mean": 0.49823062257079814,
+      "ci95": [
+        0.4955578471913427,
+        0.5010456704654508
+      ],
+      "replicates": 1000,
+      "seed": 20261012
+    },
+    "minus_unstratified_paired": {
+      "n": 26237,
+      "mean": -0.013588727689001006,
+      "ci95": [
+        -0.017312443982110678,
+        -0.010198085010452827
+      ],
+      "replicates": 1000,
+      "seed": 20261111
+    },
+    "min_meaningful_auc": 0.55,
+    "decision": {
+      "outcome": "C_NO_MEANINGFUL_WITHIN_SIZE_SIGNAL",
+      "meaning": "Within equal-size candidates the topology score does not reach the predeclared minimum meaningful AUC: the score is weak regardless of size."
+    }
+  },
+  "stratum_coverage": {
+    "users_with_same_m_competitor": 26237,
+    "users_without_same_m_competitor": 2352,
+    "median_same_m_competitors": 8.0
+  },
+  "topk_enrichment": {
+    "delta_topk_by_new_concepts": {
+      "users": 28580,
+      "k": 10,
+      "median_size_ratio": 4.990494839268633,
+      "mean_size_ratio": 4.981366358200386,
+      "share_users_ratio_above_1": 0.9998950314905528,
+      "mean_topk_size": 33.29653603918825,
+      "mean_pool_size": 7.039507831101534
+    },
+    "sasrec_topk_by_new_concepts": {
+      "users": 28580,
+      "k": 10,
+      "median_size_ratio": 1.9980947339565747,
+      "mean_size_ratio": 1.8693510952095431,
+      "share_users_ratio_above_1": 0.8890482855143457,
+      "mean_topk_size": 13.690794261721482,
+      "mean_pool_size": 7.039507831101534
+    }
+  },
+  "selection_performed": false,
+  "new_score_evaluated": false,
+  "development_test_evaluated": false
+}
